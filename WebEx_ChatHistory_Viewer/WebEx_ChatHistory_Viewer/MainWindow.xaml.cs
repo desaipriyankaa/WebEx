@@ -86,14 +86,20 @@ namespace WebEx_ChatHistory_Viewer
             }
         }
 
-        private void myFolders_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void myFolders_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            OpenFileDialog OFD = new OpenFileDialog();
-            if (OFD.ShowDialog() == true)
+             OpenFileDialog ofd = new OpenFileDialog();
+            //if (fb.ShowDialog() == WinForms.Forms.DialogResult.OK)
+            //{
+            //    myFolders.Items.Clear();
+            //}
+            if (ofd.ShowDialog() == true)
             {
-               
-                
+                string filename = ofd.FileName;
+                chatData.Text = File.ReadAllText(filename);
             }
         }
     }
 }
+
+    
