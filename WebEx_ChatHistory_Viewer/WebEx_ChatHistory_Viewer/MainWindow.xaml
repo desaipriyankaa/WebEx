@@ -81,7 +81,8 @@
                       Background="Transparent"
                       BorderThickness="0"
                       Grid.Row="1"
-                      PreviewMouseLeftButtonDown="myFolders_PreviewMouseLeftButtonDown"/>
+                      SelectionChanged="ChatItemSelected"
+                />
                 
         </Grid>
 
@@ -94,7 +95,7 @@
                     Margin="0,10,10,0"
                     Click="Browse_button_Click"/>
 
-            <TextBox x:Name="chatData"
+            <TextBlock x:Name="chatData"
                      Margin="10,70,10,10"
                      Background="DarkGray"/>
         </Grid>

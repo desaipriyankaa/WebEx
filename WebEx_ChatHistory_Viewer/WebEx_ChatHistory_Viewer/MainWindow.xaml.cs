@@ -1,27 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
-//--<using>--
-using Microsoft.Win32;
 using System.Windows.Forms;
-using WinForms = System.Windows;
-using System.Diagnostics;
-using OpenFileDialog = Microsoft.Win32.OpenFileDialog;
+using System.Windows.Input;
+using WebEx_Library;
 using Path = System.IO.Path;
-using System.IO;
-//--</using>--
+using WinForms = System.Windows;
 
 namespace WebEx_ChatHistory_Viewer
 {
@@ -30,10 +14,19 @@ namespace WebEx_ChatHistory_Viewer
     /// </summary>
     public partial class MainWindow : Window
     {
+        static Services _services = new Services(new JsonDataSource());
+
+        private string BasePath { get; set; }
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// mouse movement
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
@@ -42,11 +35,21 @@ namespace WebEx_ChatHistory_Viewer
             }
         }
 
+        /// <summary>
+        /// Screen Minimize event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MinimizeButton_Click(object sender, RoutedEventArgs e)
         {
             WindowState = WindowState.Minimized;
         }
 
+        /// <summary>
+        /// Screen maximize and if double click then resize
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MaximizeButton_Click(object sender, RoutedEventArgs e)
         {
             if (WindowState != WindowState.Maximized)
@@ -59,26 +62,33 @@ namespace WebEx_ChatHistory_Viewer
             }
         }
 
+
+        /// <summary>
+        /// Screen close event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             WinForms.Application.Current.MainWindow.Close();
         }
 
+        /// <summary>
+        /// click on browse button and folder dialog will open
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Browse_button_Click(object sender, RoutedEventArgs e)
         {
             FolderBrowserDialog FBD = new FolderBrowserDialog();
             if (FBD.ShowDialog() == WinForms.Forms.DialogResult.OK)
             {
                 myFolders.Items.Clear();
+                BasePath = FBD.SelectedPath;
 
-                string[] files = Directory.GetFiles(FBD.SelectedPath);
                 string[] dirs = Directory.GetDirectories(FBD.SelectedPath);
 
-                foreach (string file in files)
-                {
-                    myFolders.Items.Add(Path.GetFileName(file));
-                }
-
+       
                 foreach (string dir in dirs)
                 {
                     myFolders.Items.Add(Path.GetFileName(dir));
@@ -86,20 +96,21 @@ namespace WebEx_ChatHistory_Viewer
             }
         }
 
-        private void myFolders_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        /// <summary>
+        /// click on chat folder and can read chat
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+        private void ChatItemSelected(object sender, SelectionChangedEventArgs e)
         {
-             OpenFileDialog ofd = new OpenFileDialog();
-            //if (fb.ShowDialog() == WinForms.Forms.DialogResult.OK)
-            //{
-            //    myFolders.Items.Clear();
-            //}
-            if (ofd.ShowDialog() == true)
+            var selectChat = myFolders.SelectedItem;
+            if (selectChat != null)
             {
-                string filename = ofd.FileName;
-                chatData.Text = File.ReadAllText(filename);
+                string filename = Path.Join(BasePath, selectChat.ToString(), "messages.json");
+                chatData.Text = _services.ReadUserChatData(filename);
             }
         }
     }
 }
 
-    
