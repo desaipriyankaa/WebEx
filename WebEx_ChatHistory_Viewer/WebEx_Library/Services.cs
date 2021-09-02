@@ -1,4 +1,6 @@
-﻿namespace WebEx_Library
+﻿using System.Collections.Generic;
+
+namespace Service.Library
 {
     public class Services
     {
@@ -11,6 +13,10 @@
         public string ReadUserChatData(string path)
         {
            return _dataSource.ReadData(path);
+        }
+        public string[] ReadUserName(string path)
+        {
+            return _dataSource.ReadUsers(path);
         }
     }
 }

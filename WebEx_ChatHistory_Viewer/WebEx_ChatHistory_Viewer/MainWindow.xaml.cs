@@ -1,9 +1,10 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
-using WebEx_Library;
+using Service.Library;
 using Path = System.IO.Path;
 using WinForms = System.Windows;
 
@@ -80,15 +81,14 @@ namespace WebEx_ChatHistory_Viewer
         /// <param name="e"></param>
         private void Browse_button_Click(object sender, RoutedEventArgs e)
         {
-            FolderBrowserDialog FBD = new FolderBrowserDialog();
-            if (FBD.ShowDialog() == WinForms.Forms.DialogResult.OK)
+            FolderBrowserDialog folderBrowser = new FolderBrowserDialog();
+            if (folderBrowser.ShowDialog() == WinForms.Forms.DialogResult.OK)
             {
                 myFolders.Items.Clear();
-                BasePath = FBD.SelectedPath;
+                BasePath = folderBrowser.SelectedPath;
 
-                string[] dirs = Directory.GetDirectories(FBD.SelectedPath);
-
-       
+                string[] dirs = _services.ReadUserName(BasePath);
+                
                 foreach (string dir in dirs)
                 {
                     myFolders.Items.Add(Path.GetFileName(dir));
