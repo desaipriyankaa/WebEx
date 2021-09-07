@@ -1,9 +1,8 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
+using System.Windows.Media.Imaging;
 using Service.Library;
 using Path = System.IO.Path;
 using WinForms = System.Windows;
@@ -109,6 +108,36 @@ namespace WebEx_ChatHistory_Viewer
             {
                 string filename = Path.Join(BasePath, selectChat.ToString(), "messages.json");
                 chatData.Text = _services.ReadUserChatData(filename);
+            }
+        }
+
+        private void Data_Button_Click(object sender, RoutedEventArgs e)
+        {
+            var selectChat = myFolders.SelectedItem;
+            if (selectChat != null)
+            {
+                string filename = Path.Join(BasePath, selectChat.ToString(), "messages.json");
+                chatData.Text = _services.ReadUserChatData(filename);
+            }
+        }
+
+        private void Media_Button_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.InitialDirectory = @"F:\PProject\WPF\WebexDump\DirectChats";
+            ofd.Filter = "Image files (*.PNG)|*.PNG|All Files(*.*)|*.*";
+
+
+            ofd.RestoreDirectory = true;
+
+            if (ofd.ShowDialog() == WinForms.Forms.DialogResult.OK)
+            {
+                string selectedFilename = ofd.FileName;
+                BitmapImage bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.UriSource = new System.Uri(selectedFilename);
+                bitmap.EndInit();
+                ImageViewer1.Source = bitmap;
             }
         }
     }

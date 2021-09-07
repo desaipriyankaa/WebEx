@@ -7,7 +7,6 @@ namespace Service.Library
     {
         public string ReadData(string path)
         {
-            //var x = @"F:\PProject\WPF\WebexDump\DirectChats\Dhiren Goyal\messages.json";
             FileInfo FBD = new FileInfo(path);
 
             if (FBD.Exists)

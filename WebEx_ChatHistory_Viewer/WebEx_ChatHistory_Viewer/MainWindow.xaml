@@ -11,7 +11,7 @@
         ResizeMode="CanResizeWithGrip"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="25"/>
             <RowDefinition/>
@@ -83,7 +83,7 @@
                       Grid.Row="1"
                       SelectionChanged="ChatItemSelected"
                 />
-                
+
         </Grid>
 
         <!--Column no 2-->
@@ -98,6 +98,26 @@
             <TextBlock x:Name="chatData"
                      Margin="10,70,10,10"
                      Background="DarkGray"/>
+
+            <StackPanel >
+                <Image Name="ImageViewer1"
+                       Width="500"
+                       Margin="10,70,10,10" />
+            </StackPanel>
+
+            <Button Content="Data" 
+                    Height="50" Width="100"
+                    HorizontalAlignment="Left"
+                    Margin="25,10,0,0"
+                    VerticalAlignment="Top"
+                    Click="Data_Button_Click"/>
+
+            <Button Content="Media" 
+                    Height="50" Width="100"
+                    HorizontalAlignment="Left"
+                    Margin="160,10,0,0"
+                    VerticalAlignment="Top"
+                    Click="Media_Button_Click"/>
         </Grid>
     </Grid>
 </Window>
