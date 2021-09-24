@@ -160,6 +160,11 @@ namespace WebEx_ChatHistory_Viewer
                 }
             }
         }
+
+        private void chatData_Scroll(object sender, WinForms.Controls.Primitives.ScrollEventArgs e)
+        {
+
+        }
     }
 }
 
