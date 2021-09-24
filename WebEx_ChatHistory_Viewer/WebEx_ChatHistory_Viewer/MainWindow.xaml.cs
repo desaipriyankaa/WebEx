@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
@@ -114,6 +113,7 @@ namespace WebEx_ChatHistory_Viewer
 
         private void Data_Button_Click(object sender, RoutedEventArgs e)
         {
+            this.Show();
             var selectChat = myFolders.SelectedItem;
             if (selectChat != null)
             {
@@ -124,21 +124,40 @@ namespace WebEx_ChatHistory_Viewer
 
         private void Media_Button_Click(object sender, RoutedEventArgs e)
         {
+            //OpenFileDialog ofd = new OpenFileDialog();
+            //ofd.InitialDirectory = @"F:\PProject\WPF\WebexDump\DirectChats";
+            //var a = ofd.InitialDirectory;
+            //ofd.Filter = "Image files (*.PNG)|*.PNG|All Files(*.*)|*.*";
+
+            //ofd.RestoreDirectory = true;
+
+            //if (ofd.ShowDialog() == WinForms.Forms.DialogResult.OK)
+            //{
+            //    string selectedFilename = ofd.FileName;
+            //    BitmapImage bitmap = new BitmapImage();
+            //    bitmap.BeginInit();
+            //    bitmap.UriSource = new System.Uri(selectedFilename);
+            //    bitmap.EndInit();
+            //    ImageViewer1.Source = bitmap;
+            //}
+
+            var selectChat = myFolders.SelectedItem;
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.InitialDirectory = @"F:\PProject\WPF\WebexDump\DirectChats";
             ofd.Filter = "Image files (*.PNG)|*.PNG|All Files(*.*)|*.*";
-
-
-            ofd.RestoreDirectory = true;
-
-            if (ofd.ShowDialog() == WinForms.Forms.DialogResult.OK)
+                      
+            if (selectChat != null)
             {
-                string selectedFilename = ofd.FileName;
-                BitmapImage bitmap = new BitmapImage();
-                bitmap.BeginInit();
-                bitmap.UriSource = new System.Uri(selectedFilename);
-                bitmap.EndInit();
-                ImageViewer1.Source = bitmap;
+                string filename = Path.Join(BasePath, selectChat.ToString());
+
+                if (ofd.ShowDialog() == WinForms.Forms.DialogResult.OK)
+                {
+                    string selectedFilename = ofd.FileName;
+                    BitmapImage bitmap = new BitmapImage();
+                    bitmap.BeginInit();
+                    bitmap.UriSource = new System.Uri(selectedFilename);
+                    bitmap.EndInit();
+                    ImageViewer1.Source = bitmap;
+                }
             }
         }
     }
