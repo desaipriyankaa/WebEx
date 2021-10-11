@@ -1,10 +1,15 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using Newtonsoft.Json;
 using Service.Library;
 using Path = System.IO.Path;
+using TextBox = System.Windows.Controls.TextBox;
 using WinForms = System.Windows;
 
 namespace WebEx_ChatHistory_Viewer
@@ -103,24 +108,40 @@ namespace WebEx_ChatHistory_Viewer
 
         private void ChatItemSelected(object sender, SelectionChangedEventArgs e)
         {
-            var selectChat = myFolders.SelectedItem;
+            MyStack.Children.Clear();
+            object selectChat = myFolders.SelectedItem;
             if (selectChat != null)
             {
                 string filename = Path.Join(BasePath, selectChat.ToString(), "messages.json");
-                chatData.Text = _services.ReadUserChatData(filename);
+               
+                List<Messages> msg= _services.ReadUserChatData(filename);
+
+                foreach (var item in msg)
+                {
+                    string data = item.PersonEmail + "  " + item.DateTime +" \n "+ item.Text + " \n ";
+                    TextBlock textBlock = new TextBlock();
+                    textBlock.Background = Brushes.Lavender;
+                    textBlock.Margin = new Thickness(10);
+                    textBlock.Width = 400;
+                    textBlock.HorizontalAlignment = WinForms.HorizontalAlignment.Left;
+                    textBlock.TextWrapping = TextWrapping.Wrap;
+
+                    textBlock.Text = data;
+
+                    MyStack.Children.Add(textBlock);
+
+
+                    if (item.PersonEmail == "Sanket.Naik@klingelnberg.com")
+                    {
+                        textBlock.Background = Brushes.LightGreen;
+                        textBlock.Width = 400;
+                        textBlock.HorizontalAlignment = WinForms.HorizontalAlignment.Right;
+                    }
+                }
             }
         }
 
-        private void Data_Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Show();
-            var selectChat = myFolders.SelectedItem;
-            if (selectChat != null)
-            {
-                string filename = Path.Join(BasePath, selectChat.ToString(), "messages.json");
-                chatData.Text = _services.ReadUserChatData(filename);
-            }
-        }
+        
 
         private void Media_Button_Click(object sender, RoutedEventArgs e)
         {

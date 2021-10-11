@@ -10,9 +10,9 @@ namespace Service.Library
             _dataSource = dataSource;
         }
 
-        public string ReadUserChatData(string path)
+        public List<Messages> ReadUserChatData(string path)
         {
-           return _dataSource.ReadData(path);
+           return _dataSource.ReadMessage(path);
         }
         public string[] ReadUserName(string path)
         {

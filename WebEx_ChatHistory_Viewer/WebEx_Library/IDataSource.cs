@@ -7,7 +7,7 @@ namespace Service.Library
 {
     public interface IDataSource
     {
-        public string ReadData(string path);
+        public List<Messages> ReadMessage(string path);
 
         public string[] ReadUsers(string path);
         
