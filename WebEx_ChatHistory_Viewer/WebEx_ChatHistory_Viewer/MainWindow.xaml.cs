@@ -116,32 +116,47 @@ namespace WebEx_ChatHistory_Viewer
                
                 List<Messages> msg= _services.ReadUserChatData(filename);
 
+                
                 foreach (var item in msg)
                 {
-                    string data = item.PersonEmail + "  " + item.DateTime +" \n "+ item.Text + " \n ";
-                    TextBlock textBlock = new TextBlock();
-                    textBlock.Background = Brushes.Lavender;
-                    textBlock.Margin = new Thickness(10);
-                    textBlock.Width = 400;
-                    textBlock.HorizontalAlignment = WinForms.HorizontalAlignment.Left;
-                    textBlock.TextWrapping = TextWrapping.Wrap;
+                    string data = "";
 
-                    textBlock.Text = data;
-
-                    MyStack.Children.Add(textBlock);
-
-
-                    if (item.PersonEmail == "Sanket.Naik@klingelnberg.com")
+                    if (item.Files != null)
                     {
-                        textBlock.Background = Brushes.LightGreen;
-                        textBlock.Width = 400;
-                        textBlock.HorizontalAlignment = WinForms.HorizontalAlignment.Right;
+                        foreach (var item1 in item.Files)
+                        {
+                            data = item.PersonEmail + "     " + item.Created + " \n " + item.Text + " \n " + item1 + " \n ";
+                        }
+                    }
+
+                    else
+                    {
+                        data = item.PersonEmail + "     " + item.Created + " \n " + item.Text + " \n " + item.Files + " \n ";
+                    }
+                    
+                    TextBox textBox = new TextBox();
+                    textBox.Background = Brushes.Lavender;
+                    textBox.Padding = new Thickness(10,5,10,0);
+                    textBox.Margin = new Thickness(10);
+                    textBox.Width = 400;
+                    textBox.HorizontalAlignment = WinForms.HorizontalAlignment.Left;
+                    textBox.TextWrapping = TextWrapping.Wrap;
+                    textBox.IsReadOnly = true;
+
+                    textBox.Text = data;
+
+                    MyStack.Children.Add(textBox);
+
+
+                    if (item.PersonEmail == "Sanket.Naik")
+                    {
+                        textBox.Background = Brushes.LightGreen;
+                        textBox.Width = 400;
+                        textBox.HorizontalAlignment = WinForms.HorizontalAlignment.Right;
                     }
                 }
             }
         }
-
-        
 
         private void Media_Button_Click(object sender, RoutedEventArgs e)
         {
@@ -180,11 +195,6 @@ namespace WebEx_ChatHistory_Viewer
                     ImageViewer1.Source = bitmap;
                 }
             }
-        }
-
-        private void chatData_Scroll(object sender, WinForms.Controls.Primitives.ScrollEventArgs e)
-        {
-
         }
     }
 }

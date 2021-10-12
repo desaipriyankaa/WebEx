@@ -20,9 +20,23 @@ namespace Service.Library
                 messages = JsonConvert.DeserializeObject<List<Messages>>(str);         
                                
             }
-            //messages = MessageAlignment();
+
+            foreach (var item in messages)
+            {
+                item.PersonEmail = SplitEmail(item.PersonEmail);  
+            }
             return messages;
 
+        }
+
+        public string SplitEmail(string email)
+        {
+     
+            String[] parts = email.Split(new[] { '@' });
+            String username = parts[0];
+            String domain = parts[1];
+
+            return username;
         }
 
         //public List<Messages> MessageAlignment()
@@ -30,7 +44,7 @@ namespace Service.Library
         //    string email = "Sanket.Naik@klingelnberg.com";
 
         //    List<Messages> msg = new List<Messages>();
-        
+
         //    foreach (var item in msg)
         //    {
         //        if (item.PersonEmail == email)
@@ -44,16 +58,16 @@ namespace Service.Library
         //public string MessagesWithoutPropertyFields(List<Messages> msg)
         //{
         //    string str = "";
-            
+
         //    foreach (var item in msg)
         //    {
         //        str = str + "\n" + item.ToString() + "\n";
         //    }
         //    return str;
-                                
+
         //}
-        
-       
+
+
         public string[] ReadUsers(string path)
         {
             string[] dirs = Directory.GetDirectories(path);
@@ -67,20 +81,9 @@ namespace Service.Library
         public string PersonEmail { get; set; }
 
         public string Text { get; set; }
-        public DateTime DateTime { get; set; }
+        public DateTime Created { get; set; }
+        public List<string> Files { get; set; }
 
-        //public string SplitEmail()
-        //{
-        //    String[] parts = PersonEmail.Split(new[] { '@' });
-        //    String username = parts[0]; 
-        //    String domain = parts[1];
 
-        //    return username;
-        //}
-
-        //public override string ToString()
-        //{
-        //    return SplitEmail() + "         " + Created + " \n " + Text;
-        //}
     }
 }

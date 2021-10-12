@@ -98,13 +98,7 @@
                         Margin="10,70,10,10"
                             Background="DarkGray"/>
             </ScrollViewer>
-            <!--<TextBox x:Name="chatData"
-                     Margin="10,70,10,10"
-                     Background="DarkGray"
-                     ScrollViewer.HorizontalScrollBarVisibility="Auto"
-                     ScrollViewer.VerticalScrollBarVisibility="Auto"
-                     ScrollViewer.CanContentScroll="True"/>-->
-
+           
             <StackPanel>
                 <Image Name="ImageViewer1"
                        Width="500"
