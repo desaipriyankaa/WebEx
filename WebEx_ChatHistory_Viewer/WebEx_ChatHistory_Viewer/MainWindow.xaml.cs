@@ -1,12 +1,10 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using Newtonsoft.Json;
 using Service.Library;
 using Path = System.IO.Path;
 using TextBox = System.Windows.Controls.TextBox;
@@ -125,13 +123,13 @@ namespace WebEx_ChatHistory_Viewer
                     {
                         foreach (var item1 in item.Files)
                         {
-                            data = item.PersonEmail + "     " + item.Created + " \n " + item.Text + " \n " + item1 + " \n ";
+                            data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n " + item1 + " \n ";
                         }
                     }
 
                     else
                     {
-                        data = item.PersonEmail + "     " + item.Created + " \n " + item.Text + " \n " + item.Files + " \n ";
+                        data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n " ;
                     }
                     
                     TextBox textBox = new TextBox();

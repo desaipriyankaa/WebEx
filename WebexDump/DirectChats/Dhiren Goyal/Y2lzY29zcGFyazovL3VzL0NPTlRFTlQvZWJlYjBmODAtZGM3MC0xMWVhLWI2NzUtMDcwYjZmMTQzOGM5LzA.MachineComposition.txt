@@ -1,0 +1,4806 @@
+{
+    "@odata.context": "http://klin0038:7001/v1/$metadata#compositions",
+    "@odata.count": 35,
+    "value": [
+        {
+            "AssetId": 131,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 131,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "90278399$",
+                "CreateDate": "2020-02-25T17:35:17.1604335+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 131,
+                        "DataKey": "SupportedPartConfigId",
+                        "DataString": "3"
+                    },
+                    {
+                        "AssetId": 131,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 128,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "CH compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "38541397$",
+                    "CreateDate": "2020-02-25T17:32:44.0028225+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 128,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"1224#\""
+                        },
+                        {
+                            "AssetId": 128,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 128,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 129,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "Fixture comp",
+                    "Gtin": 4060847999796,
+                    "Serial": "71778122$",
+                    "CreateDate": "2020-02-25T17:33:31.1118058+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 129,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"23423$\""
+                        },
+                        {
+                            "AssetId": 129,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 129,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 130,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "99011354$",
+                    "CreateDate": "2020-02-25T12:05:15.0492283+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 130,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 135,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 135,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "11965327$",
+                "CreateDate": "2020-02-25T17:50:41.3080792+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 135,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 132,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "cutterhead compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17762694$",
+                    "CreateDate": "2020-02-25T17:47:46.1850952+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 132,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2323$\""
+                        },
+                        {
+                            "AssetId": 132,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 132,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 133,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "Fixture compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "67205728$",
+                    "CreateDate": "2020-02-25T17:48:22.3641489+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 133,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2355233$\""
+                        },
+                        {
+                            "AssetId": 133,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 133,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 134,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "89406367$",
+                    "CreateDate": "2020-02-25T12:20:41.27487+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 134,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 139,
+            "CompositionType": "MachineComposition",
+            "IsActive": true,
+            "Asset": {
+                "AssetId": 139,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "30341274$",
+                "CreateDate": "2020-02-25T18:12:34.8411733+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 139,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 136,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "CH compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "76850405$",
+                    "CreateDate": "2020-02-25T18:07:29.8781452+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 136,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"323434$\""
+                        },
+                        {
+                            "AssetId": 136,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 136,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 137,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "Fixture compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "71175291$",
+                    "CreateDate": "2020-02-25T18:08:01.1971861+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 137,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"4234223$\""
+                        },
+                        {
+                            "AssetId": 137,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 137,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 138,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "35348941$",
+                    "CreateDate": "2020-02-25T12:42:34.8187816+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 138,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 141,
+            "CompositionType": "MachineComposition",
+            "IsActive": true,
+            "Asset": {
+                "AssetId": 141,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "49690513$",
+                "CreateDate": "2020-02-25T18:14:02.3398412+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 141,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 136,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "CH compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "76850405$",
+                    "CreateDate": "2020-02-25T18:07:29.8781452+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 136,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"323434$\""
+                        },
+                        {
+                            "AssetId": 136,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 136,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 137,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "Fixture compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "71175291$",
+                    "CreateDate": "2020-02-25T18:08:01.1971861+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 137,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"4234223$\""
+                        },
+                        {
+                            "AssetId": 137,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 137,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 140,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "54698181$",
+                    "CreateDate": "2020-02-25T12:44:02.3170717+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 140,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 143,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 143,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "82130469$",
+                "CreateDate": "2020-02-25T18:15:56.983886+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 143,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 136,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "CH compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "76850405$",
+                    "CreateDate": "2020-02-25T18:07:29.8781452+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 136,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"323434$\""
+                        },
+                        {
+                            "AssetId": 136,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 136,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 137,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "Fixture compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "71175291$",
+                    "CreateDate": "2020-02-25T18:08:01.1971861+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 137,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"4234223$\""
+                        },
+                        {
+                            "AssetId": 137,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 137,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 142,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "72412311$",
+                    "CreateDate": "2020-02-25T12:45:56.9637988+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 142,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 147,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 147,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "12991238$",
+                "CreateDate": "2020-02-25T18:35:45.8513993+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 147,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 146,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "90432278$",
+                    "CreateDate": "2020-02-25T13:05:45.8241371+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 146,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 149,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 149,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "30750531$",
+                "CreateDate": "2020-02-25T18:38:13.779963+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 149,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 148,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "26040041$",
+                    "CreateDate": "2020-02-25T13:08:13.7333607+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 148,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 152,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 152,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "20551751$",
+                "CreateDate": "2020-02-26T10:59:36.0966214+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 152,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 151,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "45966846$",
+                    "CreateDate": "2020-02-26T05:29:36.0721129+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 151,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 154,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 154,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "60526530$",
+                "CreateDate": "2020-02-26T11:45:45.1639722+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 154,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 153,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "49235861$",
+                    "CreateDate": "2020-02-26T06:15:44.9183314+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 153,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 156,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 156,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "98468070$",
+                "CreateDate": "2020-02-26T14:02:33.4403624+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 156,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 155,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "61762305$",
+                    "CreateDate": "2020-02-26T08:32:33.2538257+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 155,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 158,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 158,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "73848760$",
+                "CreateDate": "2020-02-26T14:02:41.7293606+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 158,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 157,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "41556308$",
+                    "CreateDate": "2020-02-26T08:32:41.719951+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 157,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 160,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 160,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "42319261$",
+                "CreateDate": "2020-02-26T15:11:04.7514247+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 160,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 159,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "37110163$",
+                    "CreateDate": "2020-02-26T09:40:56.3545494+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 159,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 162,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 162,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "57240449$",
+                "CreateDate": "2020-02-26T15:37:49.3329751+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 162,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 161,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "29955664$",
+                    "CreateDate": "2020-02-26T10:07:49.3078772+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 161,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 164,
+            "CompositionType": "MachineComposition",
+            "IsActive": true,
+            "Asset": {
+                "AssetId": 164,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "35877163$",
+                "CreateDate": "2020-02-26T15:57:14.4095871+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 164,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 163,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "83866552$",
+                    "CreateDate": "2020-02-26T10:27:14.3863795+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 163,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 166,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 166,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "12423257$",
+                "CreateDate": "2020-02-26T16:01:07.389752+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 166,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 165,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "42846020$",
+                    "CreateDate": "2020-02-26T10:31:07.3622208+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 165,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 168,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 168,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "55832226$",
+                "CreateDate": "2020-02-26T16:04:02.5975376+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 168,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 167,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "28547442$",
+                    "CreateDate": "2020-02-26T10:34:02.5728908+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 167,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 170,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 170,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "95713984$",
+                "CreateDate": "2020-02-26T16:24:48.4322576+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 170,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 169,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "41144415$",
+                    "CreateDate": "2020-02-26T10:54:48.294573+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 169,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 172,
+            "CompositionType": "MachineComposition",
+            "IsActive": true,
+            "Asset": {
+                "AssetId": 172,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "93727225$",
+                "CreateDate": "2020-02-26T16:32:08.1393667+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 172,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 171,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "98734893$",
+                    "CreateDate": "2020-02-26T11:02:08.1147848+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 171,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 174,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 174,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "30589638$",
+                "CreateDate": "2020-02-26T16:33:03.816482+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 174,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 173,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "93304853$",
+                    "CreateDate": "2020-02-26T11:03:03.7867008+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 173,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 176,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 176,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "33465214$",
+                "CreateDate": "2020-02-26T16:34:39.2339114+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 176,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 175,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "96180429$",
+                    "CreateDate": "2020-02-26T11:04:39.20717+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 175,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 178,
+            "CompositionType": "MachineComposition",
+            "IsActive": true,
+            "Asset": {
+                "AssetId": 178,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "27764101$",
+                "CreateDate": "2020-02-26T16:35:52.446691+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 178,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 177,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "15205142$",
+                    "CreateDate": "2020-02-26T11:05:52.41931+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 177,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 180,
+            "CompositionType": "MachineComposition",
+            "IsActive": true,
+            "Asset": {
+                "AssetId": 180,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "75599928$",
+                "CreateDate": "2020-02-26T16:43:57.0571824+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 180,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 179,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "33589318$",
+                    "CreateDate": "2020-02-26T11:13:57.0358321+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 179,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 182,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 182,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "26268267$",
+                "CreateDate": "2020-02-26T16:52:03.1253457+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 182,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 181,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "71416855$",
+                    "CreateDate": "2020-02-26T11:22:03.098496+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 181,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 184,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 184,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "79121070$",
+                "CreateDate": "2020-02-26T16:52:42.1282669+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 184,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 183,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "61554444$",
+                    "CreateDate": "2020-02-26T11:22:42.1125155+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 183,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 186,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 186,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "54115881$",
+                "CreateDate": "2020-02-26T16:53:01.1212243+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 186,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 185,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "68841707$",
+                    "CreateDate": "2020-02-26T11:23:01.1040261+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 185,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 188,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 188,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "29218453$",
+                "CreateDate": "2020-02-26T16:53:25.7406794+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 188,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 187,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "11651827$",
+                    "CreateDate": "2020-02-26T11:23:25.72491+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 187,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 190,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 190,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "36172046$",
+                "CreateDate": "2020-02-26T16:54:29.9178696+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 190,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 189,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "41179714$",
+                    "CreateDate": "2020-02-26T11:24:29.8925207+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 189,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 192,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 192,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "52419800$",
+                "CreateDate": "2020-02-26T16:55:12.8104344+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 192,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 191,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "25135016$",
+                    "CreateDate": "2020-02-26T11:25:12.7915136+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 191,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 194,
+            "CompositionType": "MachineComposition",
+            "IsActive": true,
+            "Asset": {
+                "AssetId": 194,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "93594871$",
+                "CreateDate": "2020-02-26T17:09:52.0663257+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 194,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 193,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "98602539$",
+                    "CreateDate": "2020-02-26T11:39:52.0444902+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 193,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 196,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 196,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "89459122$",
+                "CreateDate": "2020-02-26T17:31:18.0602827+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 196,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 195,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "62174337$",
+                    "CreateDate": "2020-02-26T12:01:18.0381003+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 195,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 198,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 198,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "15289925$",
+                "CreateDate": "2020-02-26T17:31:40.8163034+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 198,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 197,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "87723297$",
+                    "CreateDate": "2020-02-26T12:01:40.8004671+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 197,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 200,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 200,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "19736387$",
+                "CreateDate": "2020-02-26T17:31:59.7626532+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 200,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 60,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328999",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328999",
+                    "CreateDate": "2020-02-03T13:38:33.047657+05:30",
+                    "KlMaterialNumber": "C.328999",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 60,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328999\""
+                        },
+                        {
+                            "AssetId": 60,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 144,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "fix compo",
+                    "Gtin": 4060847999796,
+                    "Serial": "49232162$",
+                    "CreateDate": "2020-02-25T18:28:25.2968855+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 2086,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 144,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2342#\""
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 144,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 145,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "ch compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "17393129$",
+                    "CreateDate": "2020-02-25T18:29:54.5141961+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 2084,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 145,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"2324322$\""
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 145,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 199,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "45151482$",
+                    "CreateDate": "2020-02-26T12:01:59.7516655+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 199,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 261,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 261,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "90278399$",
+                "CreateDate": "2020-02-25T17:35:17.1604335+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 261,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 59,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328082",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328082",
+                    "CreateDate": "2020-02-03T13:38:32.9948549+05:30",
+                    "KlMaterialNumber": "C.328082",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 59,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328082\""
+                        },
+                        {
+                            "AssetId": 59,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 128,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "CH compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "38541397$",
+                    "CreateDate": "2020-02-25T17:32:44.0028225+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 128,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"1224#\""
+                        },
+                        {
+                            "AssetId": 128,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 128,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 129,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "Fixture comp",
+                    "Gtin": 4060847999796,
+                    "Serial": "71778122$",
+                    "CreateDate": "2020-02-25T17:33:31.1118058+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 129,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"23423$\""
+                        },
+                        {
+                            "AssetId": 129,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 129,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 130,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "99011354$",
+                    "CreateDate": "2020-02-25T12:05:15.0492283+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 130,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 262,
+            "CompositionType": "MachineComposition",
+            "IsActive": false,
+            "Asset": {
+                "AssetId": 262,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "90278399$",
+                "CreateDate": "2020-02-25T17:35:17.1604335+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 262,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 59,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328082",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328082",
+                    "CreateDate": "2020-02-03T13:38:32.9948549+05:30",
+                    "KlMaterialNumber": "C.328082",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 59,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328082\""
+                        },
+                        {
+                            "AssetId": 59,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 128,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "CH compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "38541397$",
+                    "CreateDate": "2020-02-25T17:32:44.0028225+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 128,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"1224#\""
+                        },
+                        {
+                            "AssetId": 128,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 128,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 129,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "Fixture comp",
+                    "Gtin": 4060847999796,
+                    "Serial": "71778122$",
+                    "CreateDate": "2020-02-25T17:33:31.1118058+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 129,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"23423$\""
+                        },
+                        {
+                            "AssetId": 129,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 129,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 130,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "99011354$",
+                    "CreateDate": "2020-02-25T12:05:15.0492283+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 130,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AssetId": 263,
+            "CompositionType": "MachineComposition",
+            "IsActive": true,
+            "Asset": {
+                "AssetId": 263,
+                "AssetType": "Composition",
+                "AssetStateType": "Production",
+                "Name": "_config_2.1  machine composition",
+                "Gtin": 4060847999932,
+                "Serial": "90278399$",
+                "CreateDate": "2020-02-25T17:35:17.1604335+05:30",
+                "KlMaterialNumber": null,
+                "LifeTimeAwarenessType": "None",
+                "WorkpieceCountActual": 0,
+                "WorkpieceCountMax": 100,
+                "WorkpieceCountPrewarn": 100,
+                "Data": [
+                    {
+                        "AssetId": 263,
+                        "DataKey": "SupportedPartId",
+                        "DataString": "3"
+                    }
+                ]
+            },
+            "Elements": [
+                {
+                    "AssetId": 58,
+                    "AssetType": "Machine",
+                    "AssetStateType": "Production",
+                    "Name": "C30_328079",
+                    "Gtin": 4060847999949,
+                    "Serial": "C30-328079",
+                    "CreateDate": "2020-02-03T13:38:32.9398783+05:30",
+                    "KlMaterialNumber": "C.328079",
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 58,
+                            "DataKey": "MachineName",
+                            "DataString": "\"C30-328079\""
+                        },
+                        {
+                            "AssetId": 58,
+                            "DataKey": "Type",
+                            "DataString": "\"328\""
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 128,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "CH compo",
+                    "Gtin": 4060847999895,
+                    "Serial": "38541397$",
+                    "CreateDate": "2020-02-25T17:32:44.0028225+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "MachiningCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 128,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"1224#\""
+                        },
+                        {
+                            "AssetId": 128,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 128,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 129,
+                    "AssetType": "Composition",
+                    "AssetStateType": "Production",
+                    "Name": "Fixture comp",
+                    "Gtin": 4060847999796,
+                    "Serial": "71778122$",
+                    "CreateDate": "2020-02-25T17:33:31.1118058+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "ClampingCycle",
+                    "WorkpieceCountActual": 100,
+                    "WorkpieceCountMax": 30000,
+                    "WorkpieceCountPrewarn": 25000,
+                    "Data": [
+                        {
+                            "AssetId": 129,
+                            "DataKey": "DrawingNumber",
+                            "DataString": "\"23423$\""
+                        },
+                        {
+                            "AssetId": 129,
+                            "DataKey": "SupportedPartConfigId",
+                            "DataString": "3"
+                        },
+                        {
+                            "AssetId": 129,
+                            "DataKey": "SupportedPartId",
+                            "DataString": "3"
+                        }
+                    ]
+                },
+                {
+                    "AssetId": 130,
+                    "AssetType": "Job",
+                    "AssetStateType": "Production",
+                    "Name": "_config_2.1 ",
+                    "Gtin": 4060847999987,
+                    "Serial": "99011354$",
+                    "CreateDate": "2020-02-25T12:05:15.0492283+05:30",
+                    "KlMaterialNumber": null,
+                    "LifeTimeAwarenessType": "None",
+                    "WorkpieceCountActual": 0,
+                    "WorkpieceCountMax": 100,
+                    "WorkpieceCountPrewarn": 100,
+                    "Data": [
+                        {
+                            "AssetId": 130,
+                            "DataKey": "NeutralDataIdentifier",
+                            "DataString": "\"\""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

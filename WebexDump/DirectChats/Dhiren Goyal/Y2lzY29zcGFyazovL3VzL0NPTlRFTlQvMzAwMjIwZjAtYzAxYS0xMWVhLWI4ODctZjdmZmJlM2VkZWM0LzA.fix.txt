@@ -1,0 +1,184 @@
+{
+    "@odata.context": "http://localhost:7001/v1/$metadata#compositions/$entity",
+    "AssetId": 0,
+    "CompositionType": "FixtureComposition",
+    "IsActive": true,
+    "Asset": {
+        "AssetId": 0,
+        "AssetType": "Composition",
+        "AssetStateType": "Production",
+        "Name": "Fixture comp",
+        "Gtin": 4060847999796,
+        "Serial": "71778122$",
+        "CreateDate": "2020-02-25T17:33:31.1118058+05:30",
+        "KlMaterialNumber": null,
+        "LifeTimeAwarenessType": "ClampingCycle",
+        "WorkpieceCountActual": 100,
+        "WorkpieceCountMax": 30000,
+        "WorkpieceCountPrewarn": 25000,
+        "Data": [
+            {
+                "AssetId": 0,
+                "DataKey": "DrawingNumber",
+                "DataString": "\"23423$\""
+            }
+        ]
+    },
+    "Elements": [
+        {
+            "AssetId": 3,
+            "AssetType": "Fixture",
+            "AssetStateType": "Production",
+            "Name": "Clamping fixture TR C1",
+            "Gtin": 4060847001024,
+            "Serial": "0",
+            "CreateDate": "2020-02-03T13:38:30.0912264+05:30",
+            "KlMaterialNumber": "862180$",
+            "LifeTimeAwarenessType": "ClampingCycle",
+            "WorkpieceCountActual": 2386,
+            "WorkpieceCountMax": 30000,
+            "WorkpieceCountPrewarn": 25000,
+            "Data": [
+                {
+                    "AssetId": 3,
+                    "DataKey": "ClientMaterialNumber",
+                    "DataString": "\"9873000\""
+                },
+                {
+                    "AssetId": 3,
+                    "DataKey": "ProductionDate",
+                    "DataString": "\"2020-01-28T00:00:00.0000000\""
+                },
+                {
+                    "AssetId": 3,
+                    "DataKey": "Type",
+                    "DataString": "\"BaseplateCenteringInside\""
+                }
+            ]
+        },
+        {
+            "AssetId": 4,
+            "AssetType": "Fixture",
+            "AssetStateType": "Production",
+            "Name": "Support ring 073 #1",
+            "Gtin": 4060847000843,
+            "Serial": "0",
+            "CreateDate": "2020-02-03T13:38:30.1418052+05:30",
+            "KlMaterialNumber": "862179$",
+            "LifeTimeAwarenessType": "ClampingCycle",
+            "WorkpieceCountActual": 2386,
+            "WorkpieceCountMax": 30000,
+            "WorkpieceCountPrewarn": 25000,
+            "Data": [
+                {
+                    "AssetId": 4,
+                    "DataKey": "ClientMaterialNumber",
+                    "DataString": "\"9873000-01\""
+                },
+                {
+                    "AssetId": 4,
+                    "DataKey": "ProductionDate",
+                    "DataString": "\"2020-01-28T00:00:00.0000000\""
+                },
+                {
+                    "AssetId": 4,
+                    "DataKey": "Type",
+                    "DataString": "\"Standard\""
+                }
+            ]
+        },
+        {
+            "AssetId": 5,
+            "AssetType": "Fixture",
+            "AssetStateType": "Production",
+            "Name": "Single collet 073 #1",
+            "Gtin": 4060847000355,
+            "Serial": "0",
+            "CreateDate": "2020-02-03T13:38:30.1950734+05:30",
+            "KlMaterialNumber": "862181$",
+            "LifeTimeAwarenessType": "ClampingCycle",
+            "WorkpieceCountActual": 2386,
+            "WorkpieceCountMax": 30000,
+            "WorkpieceCountPrewarn": 25000,
+            "Data": [
+                {
+                    "AssetId": 5,
+                    "DataKey": "ClientMaterialNumber",
+                    "DataString": "\"9873000-02\""
+                },
+                {
+                    "AssetId": 5,
+                    "DataKey": "ProductionDate",
+                    "DataString": "\"2020-01-28T00:00:00.0000000\""
+                },
+                {
+                    "AssetId": 5,
+                    "DataKey": "Type",
+                    "DataString": "\"Standard\""
+                }
+            ]
+        },
+        {
+            "AssetId": 6,
+            "AssetType": "Fixture",
+            "AssetStateType": "Production",
+            "Name": "Control ring D73 #1",
+            "Gtin": 4060847000126,
+            "Serial": "0",
+            "CreateDate": "2020-02-03T13:38:30.244457+05:30",
+            "KlMaterialNumber": "862184$",
+            "LifeTimeAwarenessType": "ClampingCycle",
+            "WorkpieceCountActual": 2386,
+            "WorkpieceCountMax": 30000,
+            "WorkpieceCountPrewarn": 25000,
+            "Data": [
+                {
+                    "AssetId": 6,
+                    "DataKey": "ClientMaterialNumber",
+                    "DataString": "\"9873000-04\""
+                },
+                {
+                    "AssetId": 6,
+                    "DataKey": "ProductionDate",
+                    "DataString": "\"2020-01-28T00:00:00.0000000\""
+                },
+                {
+                    "AssetId": 6,
+                    "DataKey": "Type",
+                    "DataString": "\"Standard\""
+                }
+            ]
+        },
+        {
+            "AssetId": 7,
+            "AssetType": "Fixture",
+            "AssetStateType": "Production",
+            "Name": "Centering cover 073 #1",
+            "Gtin": 4060847045165,
+            "Serial": "0",
+            "CreateDate": "2020-02-03T13:38:30.291535+05:30",
+            "KlMaterialNumber": "862183$",
+            "LifeTimeAwarenessType": "ClampingCycle",
+            "WorkpieceCountActual": 2386,
+            "WorkpieceCountMax": 30000,
+            "WorkpieceCountPrewarn": 25000,
+            "Data": [
+                {
+                    "AssetId": 7,
+                    "DataKey": "ClientMaterialNumber",
+                    "DataString": "\"9873000-03\""
+                },
+                {
+                    "AssetId": 7,
+                    "DataKey": "ProductionDate",
+                    "DataString": "\"2020-01-28T00:00:00.0000000\""
+                },
+                {
+                    "AssetId": 7,
+                    "DataKey": "Type",
+                    "DataString": "\"CenteringBushing\""
+                }
+            ]
+        }
+    ]
+}

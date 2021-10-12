@@ -1,0 +1,112 @@
+[
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvODU0NzIyYzAtODY0MS0xMWViLWJlMjQtMGQ4YTBlYTMzN2Nl",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vZDQ1NDU3YTQtZDk0OC0zMGI5LWI1MmEtMDdmZTYxNTUwYTFj",
+        "roomType": "direct",
+        "text": "\ud83d\udc4d Thanks for checking!",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS84NmMzZWUwMS1lZDc3LTQwOWQtOGQxNC0yNzRjYzRmZWNkMDI",
+        "personEmail": "jan-moritz.sporbeck@klingelnberg.com",
+        "created": "2021-03-16T10:22:33.196Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvNGY1NDQwZDAtODY0MS0xMWViLTgxNDktYzc4MjlhMzg1M2E1",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vZDQ1NDU3YTQtZDk0OC0zMGI5LWI1MmEtMDdmZTYxNTUwYTFj",
+        "roomType": "direct",
+        "text": "yes it is working locally with the same version.\nlooks might be something different issue that we did not encountered yet",
+        "files": [
+            "https://webexapis.com/v1/contents/Y2lzY29zcGFyazovL3VzL0NPTlRFTlQvNGY1NDQwZDAtODY0MS0xMWViLTgxNDktYzc4MjlhMzg1M2E1LzA"
+        ],
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2021-03-16T10:21:02.685Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvNDgxYzRhNDAtODYzZS0xMWViLThjMzAtNGJjY2JlYmIxMzM5",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vZDQ1NDU3YTQtZDk0OC0zMGI5LWI1MmEtMDdmZTYxNTUwYTFj",
+        "roomType": "direct",
+        "text": "yes. IT's uploading again. Can you please verify the command line interface is working? With version 4.2.0 I don' get any response on i.e.\n\"SPCDataUploader.exe status\"",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS84NmMzZWUwMS1lZDc3LTQwOWQtOGQxNC0yNzRjYzRmZWNkMDI",
+        "personEmail": "jan-moritz.sporbeck@klingelnberg.com",
+        "created": "2021-03-16T09:59:22.084Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvMzdiYjcwNTAtODYzZC0xMWViLWExYjYtZjNhNjNkNzFkODlk",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vZDQ1NDU3YTQtZDk0OC0zMGI5LWI1MmEtMDdmZTYxNTUwYTFj",
+        "roomType": "direct",
+        "text": "Hello Jan,\nI guess you need to update:\nLastUploadDateTimeOffset:\nand JsonFileUtcDateTime\nthat should be enough",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "html": "<p>Hello Jan,<br>I guess you need to update:<br/><b>LastUploadDateTimeOffset</b>:<br/>and <b>JsonFileUtcDateTime</b><br/>that should be enough</p>",
+        "created": "2021-03-16T09:51:45.109Z",
+        "updated": "2021-03-16T09:52:06.267Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvMWE4NGU2NjAtODYzOC0xMWViLWFjY2YtMDFjMWJjOTA0Zjdi",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vZDQ1NDU3YTQtZDk0OC0zMGI5LWI1MmEtMDdmZTYxNTUwYTFj",
+        "roomType": "direct",
+        "text": "what date do I have to change in the last uploaddetails.json ?",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS84NmMzZWUwMS1lZDc3LTQwOWQtOGQxNC0yNzRjYzRmZWNkMDI",
+        "personEmail": "jan-moritz.sporbeck@klingelnberg.com",
+        "created": "2021-03-16T09:15:08.614Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvMGY2YjY4ODAtODYzOC0xMWViLThkY2YtMmYwNzg4MjQwZWQy",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vZDQ1NDU3YTQtZDk0OC0zMGI5LWI1MmEtMDdmZTYxNTUwYTFj",
+        "roomType": "direct",
+        "text": "please remind me, how do I force the uploader to start sending data?",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS84NmMzZWUwMS1lZDc3LTQwOWQtOGQxNC0yNzRjYzRmZWNkMDI",
+        "personEmail": "jan-moritz.sporbeck@klingelnberg.com",
+        "created": "2021-03-16T09:14:49.992Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvZmYxM2MwZTAtODYzNy0xMWViLWIxZWUtNzU4MTdmNjE0NmFl",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vZDQ1NDU3YTQtZDk0OC0zMGI5LWI1MmEtMDdmZTYxNTUwYTFj",
+        "roomType": "direct",
+        "text": "Hello Sanket, I am in the middle of a service call at Daimler.",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS84NmMzZWUwMS1lZDc3LTQwOWQtOGQxNC0yNzRjYzRmZWNkMDI",
+        "personEmail": "jan-moritz.sporbeck@klingelnberg.com",
+        "created": "2021-03-16T09:14:22.574Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvOTliOTY5NTAtNzFkNS0xMWViLWJhOTQtNDNmYjM0MjIyZjA2",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vZDQ1NDU3YTQtZDk0OC0zMGI5LWI1MmEtMDdmZTYxNTUwYTFj",
+        "roomType": "direct",
+        "text": "yup will do that",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2021-02-18T10:39:38.597Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvNjgyZDI3YzAtNzFkMy0xMWViLWEwOGMtNDc2YTQ0Y2VkZjlm",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vZDQ1NDU3YTQtZDk0OC0zMGI5LWI1MmEtMDdmZTYxNTUwYTFj",
+        "roomType": "direct",
+        "text": "For the next release, can you please set the Creator in the config file to\nAssembly.GetEntryAssembly()?.GetName() ?? Assembly.GetCallingAssembly().GetName();\nor that alike?",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS84NmMzZWUwMS1lZDc3LTQwOWQtOGQxNC0yNzRjYzRmZWNkMDI",
+        "personEmail": "jan-moritz.sporbeck@klingelnberg.com",
+        "created": "2021-02-18T10:23:56.476Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvM2Y5YjBhYjAtNzFjYS0xMWViLWE3ODMtMzkxYjRjNDRkYzVk",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vZDQ1NDU3YTQtZDk0OC0zMGI5LWI1MmEtMDdmZTYxNTUwYTFj",
+        "roomType": "direct",
+        "text": "yes, I missed to write the ToolComposition in this code",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2021-02-18T09:18:22.939Z",
+        "parentId": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvMWY0MjY2ZjAtNzFjYS0xMWViLWE5YjQtZWQ5ZDkyZTE5OGVm",
+        "updated": "2021-02-18T09:18:36.539Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvMWY0MjY2ZjAtNzFjYS0xMWViLWE5YjQtZWQ5ZDkyZTE5OGVm",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vZDQ1NDU3YTQtZDk0OC0zMGI5LWI1MmEtMDdmZTYxNTUwYTFj",
+        "roomType": "direct",
+        "text": "I guess that would help too.\nbecause currently I am picking Component context from PRI file",
+        "files": [
+            "https://webexapis.com/v1/contents/Y2lzY29zcGFyazovL3VzL0NPTlRFTlQvMjRmNDEzMDAtNzFjYS0xMWViLTgwMGUtYjM4YjE1MWVkOWE4LzA"
+        ],
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2021-02-18T09:17:28.671Z",
+        "updated": "2021-02-18T09:17:38.224Z"
+    }
+]

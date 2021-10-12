@@ -1,0 +1,141 @@
+{
+    "@odata.context": "http://localhost:7001/v1/$metadata#compositions/$entity",
+    "AssetId": 0,
+    "CompositionType": "CutterHeadComposition",
+    "IsActive": false,
+    "Asset": {
+        "AssetId": 0,
+        "AssetType": "Composition",
+        "AssetStateType": "Production",
+        "Name": "CH compo",
+        "Gtin": 4060847999895,
+        "Serial": "38541397$",
+        "CreateDate": "2020-02-25T17:32:44.0028225+05:30",
+        "KlMaterialNumber": null,
+        "LifeTimeAwarenessType": "MachiningCycle",
+        "WorkpieceCountActual": 100,
+        "WorkpieceCountMax": 30000,
+        "WorkpieceCountPrewarn": 25000,
+        "Data": [
+            {
+                "AssetId": 0,
+                "DataKey": "DrawingNumber",
+                "DataString": "\"1224#\""
+            },
+            {
+                "AssetId": 128,
+                "DataKey": "SupportedPartConfigId",
+                "DataString": "3"
+            },
+            {
+                "AssetId": 128,
+                "DataKey": "SupportedPartId",
+                "DataString": "3"
+            }
+        ]
+    },
+    "Elements": [
+        {
+            "AssetId": 1,
+            "AssetType": "BladeSet",
+            "AssetStateType": "Production",
+            "Name": "Arcon UAC Blade Set 10,16 x 12,70 mm HB40UF Alcrona Pro",
+            "Gtin": 4060847000270,
+            "Serial": "0",
+            "CreateDate": "2020-02-03T13:38:29.7700751+05:30",
+            "KlMaterialNumber": "341223A",
+            "LifeTimeAwarenessType": "MachiningCycle",
+            "WorkpieceCountActual": 2384,
+            "WorkpieceCountMax": 30000,
+            "WorkpieceCountPrewarn": 25000,
+            "Data": [
+                {
+                    "AssetId": 1,
+                    "DataKey": "BladeCrossSection",
+                    "DataString": "\"BCS_10_16x12_70mm\""
+                },
+                {
+                    "AssetId": 1,
+                    "DataKey": "BladesType",
+                    "DataString": "\"OuterInner\""
+                },
+                {
+                    "AssetId": 1,
+                    "DataKey": "CurrentEffectiveDimension_mm",
+                    "DataString": "\"223.0\""
+                },
+                {
+                    "AssetId": 1,
+                    "DataKey": "CurrentRegrindingCount",
+                    "DataString": "\"222\""
+                },
+                {
+                    "AssetId": 1,
+                    "DataKey": "CuttingProcess",
+                    "DataString": "\"FaceHobbing\""
+                },
+                {
+                    "AssetId": 1,
+                    "DataKey": "LastBladeGrindingDate",
+                    "DataString": "\"2019-11-18T06:30:00.0000000Z\""
+                },
+                {
+                    "AssetId": 1,
+                    "DataKey": "MaximumEffectiveDimension_mm",
+                    "DataString": "\"555.0\""
+                },
+                {
+                    "AssetId": 1,
+                    "DataKey": "MinimumEffectiveDimension_mm",
+                    "DataString": "\"444.0\""
+                },
+                {
+                    "AssetId": 1,
+                    "DataKey": "ProductionDate",
+                    "DataString": "\"2018-05-15T12:00:00.0000000Z\""
+                },
+                {
+                    "AssetId": 1,
+                    "DataKey": "TotalBlades",
+                    "DataString": "\"20\""
+                },
+                {
+                    "AssetId": 1,
+                    "DataKey": "Type",
+                    "DataString": "\"HpgsBladeSet\""
+                }
+            ]
+        },
+        {
+            "AssetId": 8,
+            "AssetType": "CutterHead",
+            "AssetStateType": "Production",
+            "Name": "ARCON 10-6\" L II",
+            "Gtin": 4060847083839,
+            "Serial": "0",
+            "CreateDate": "2020-02-03T13:38:30.3450397+05:30",
+            "KlMaterialNumber": "379133A",
+            "LifeTimeAwarenessType": "MachiningCycle",
+            "WorkpieceCountActual": 2384,
+            "WorkpieceCountMax": 30000,
+            "WorkpieceCountPrewarn": 25000,
+            "Data": [
+                {
+                    "AssetId": 8,
+                    "DataKey": "ProductionDate",
+                    "DataString": "\"2019-05-27T12:00:00.0000000Z\""
+                },
+                {
+                    "AssetId": 8,
+                    "DataKey": "Type",
+                    "DataString": "\"ARCON_10_6_L_II\""
+                },
+                {
+                    "AssetId": 8,
+                    "DataKey": "Weight_g",
+                    "DataString": "\"20500\""
+                }
+            ]
+        }
+    ]
+}

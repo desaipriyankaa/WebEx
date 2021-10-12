@@ -1,0 +1,132 @@
+[
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvN2Q1MDhlMjAtNGU3YS0xMWViLWI0NWItOWZlOTcyN2M5NzZj",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vYjU3ODdjNGUtM2MyZC0zMWNjLWEzOTUtOTUwMTczYjdhNTdi",
+        "roomType": "direct",
+        "text": "Olaf Vogel\nPW: eNaPJvZ8\n",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS80MDhmODJkNy0zZDUxLTQ0YWYtOWJhYi0wODYxODg1YTc1M2Q",
+        "personEmail": "olaf.vogel@klingelnberg.com",
+        "html": "<blockquote class='messageQuote'><span class='spark-contact'>Olaf Vogel</span><br>PW: eNaPJvZ8</blockquote><p></p>",
+        "created": "2021-01-04T10:49:16.034Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvNzU1ZjUyNTAtNGU3YS0xMWViLTk1NTEtZmZhNmQzNWM0MWJk",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vYjU3ODdjNGUtM2MyZC0zMWNjLWEzOTUtOTUwMTczYjdhNTdi",
+        "roomType": "direct",
+        "text": "Olaf Vogel\nHello everyone, here is the link to the recording of CLPS.App-UI-Review:\nhttps://klingelnberg.webex.com/recordingservice/sites/klingelnberg/recording/playback/7f99ce3dcdd246438fc028e535a7a35e\n",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS80MDhmODJkNy0zZDUxLTQ0YWYtOWJhYi0wODYxODg1YTc1M2Q",
+        "personEmail": "olaf.vogel@klingelnberg.com",
+        "html": "<blockquote class='messageQuote'><span class='spark-contact'>Olaf Vogel</span><br>Hello everyone, here is the link to the recording of CLPS.App-UI-Review:<br><a href=\"https://klingelnberg.webex.com/recordingservice/sites/klingelnberg/recording/playback/7f99ce3dcdd246438fc028e535a7a35e\" alt=\"https://klingelnberg.webex.com/recordingservice/sites/klingelnberg/recording/playback/7f99ce3dcdd246438fc028e535a7a35e\" onClick=\"return sparkBase.clickEventHandler(event);\">https://klingelnberg.webex.com/recordingservice/sites/klingelnberg/recording/playback/7f99ce3dcdd246438fc028e535a7a35e</a></blockquote><p></p>",
+        "created": "2021-01-04T10:49:02.709Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvZTlkZWJmNjAtZjI1Ni0xMWVhLTk1YjAtMWY1ZGQ3YmRmYTdi",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vYjU3ODdjNGUtM2MyZC0zMWNjLWEzOTUtOTUwMTczYjdhNTdi",
+        "roomType": "direct",
+        "files": [
+            "https://webexapis.com/v1/contents/Y2lzY29zcGFyazovL3VzL0NPTlRFTlQvZTlkZWJmNjAtZjI1Ni0xMWVhLTk1YjAtMWY1ZGQ3YmRmYTdiLzA"
+        ],
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2020-09-09T04:42:49.302Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvMWMwZDYyZDAtZjI1Ni0xMWVhLTg0ODItYjcyMzYxZjBmYjY3",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vYjU3ODdjNGUtM2MyZC0zMWNjLWEzOTUtOTUwMTczYjdhNTdi",
+        "roomType": "direct",
+        "text": "Good morning...\nthanks for the feedback Olaf\ud83d\ude42\nwill make the changes accordingly with the above suggestion(with text M\u00e9xico)",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "html": "<p>Good morning... <br>thanks for the feedback Olaf\ud83d\ude42 <br>will make the changes accordingly with the above suggestion(with text <i>M\u00e9xico</i>)</p>",
+        "created": "2020-09-09T04:37:03.997Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvOGQ0OTNjMjAtZjFkMC0xMWVhLTg2ZGYtMmQ3ZmVlYzY0MjM1",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vYjU3ODdjNGUtM2MyZC0zMWNjLWEzOTUtOTUwMTczYjdhNTdi",
+        "roomType": "direct",
+        "text": "The texts are taken from .NET Framework",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS80MDhmODJkNy0zZDUxLTQ0YWYtOWJhYi0wODYxODg1YTc1M2Q",
+        "personEmail": "olaf.vogel@klingelnberg.com",
+        "created": "2020-09-08T12:41:01.410Z",
+        "parentId": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvZmUzOWRhMzAtZjFjZi0xMWVhLWIzMTAtNjdlZWY4MGFlMzg1",
+        "updated": "2020-09-08T12:41:36.426Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvMGU2MjViODAtZjFkMC0xMWVhLWExZTEtNGYyYjk0OGRhMmZh",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vYjU3ODdjNGUtM2MyZC0zMWNjLWEzOTUtOTUwMTczYjdhNTdi",
+        "roomType": "direct",
+        "files": [
+            "https://webexapis.com/v1/contents/Y2lzY29zcGFyazovL3VzL0NPTlRFTlQvMGU2MjViODAtZjFkMC0xMWVhLWExZTEtNGYyYjk0OGRhMmZhLzA"
+        ],
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS80MDhmODJkNy0zZDUxLTQ0YWYtOWJhYi0wODYxODg1YTc1M2Q",
+        "personEmail": "olaf.vogel@klingelnberg.com",
+        "created": "2020-09-08T12:37:28.504Z",
+        "parentId": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvZmUzOWRhMzAtZjFjZi0xMWVhLWIzMTAtNjdlZWY4MGFlMzg1"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvZmUzOWRhMzAtZjFjZi0xMWVhLWIzMTAtNjdlZWY4MGFlMzg1",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vYjU3ODdjNGUtM2MyZC0zMWNjLWEzOTUtOTUwMTczYjdhNTdi",
+        "roomType": "direct",
+        "text": "What we do in Gear Designer: showing \"espa\u00f1ol\" only, but showing more in the tooltip:",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS80MDhmODJkNy0zZDUxLTQ0YWYtOWJhYi0wODYxODg1YTc1M2Q",
+        "personEmail": "olaf.vogel@klingelnberg.com",
+        "created": "2020-09-08T12:37:01.395Z",
+        "updated": "2020-09-08T12:40:18.090Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvZjk4ZmRhMjAtZjFjZi0xMWVhLWE4ODUtZjU2NzJhNDExZDg5",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vYjU3ODdjNGUtM2MyZC0zMWNjLWEzOTUtOTUwMTczYjdhNTdi",
+        "roomType": "direct",
+        "text": "Please, take care of:\n\nmaking a space before of the bracket if you add (M\u00e9xico),\nusing espa\u00f1ol without a trailing a",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS80MDhmODJkNy0zZDUxLTQ0YWYtOWJhYi0wODYxODg1YTc1M2Q",
+        "personEmail": "olaf.vogel@klingelnberg.com",
+        "html": "<p>Please, take care of:</p><ul><li>making a space before of the bracket if you add (M\u00e9xico),</li><li>using espa\u00f1ol without a trailing a</li></ul>",
+        "created": "2020-09-08T12:36:53.570Z",
+        "updated": "2020-09-08T12:39:24.359Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvYjE0ODk2MzAtZjFjZi0xMWVhLThjOTItODkyMWFlOTViZjk3",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vYjU3ODdjNGUtM2MyZC0zMWNjLWEzOTUtOTUwMTczYjdhNTdi",
+        "roomType": "direct",
+        "text": "I think that showing the full text with \"(M\u00e9xico)\" at the end is fine, even it it takes more space. The time one selects a language the control can cover other parts of UI without problem. One does not switch language every 3 seconds!-)\nBut, just showing espa\u00f1ol is fine as well for me.",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS80MDhmODJkNy0zZDUxLTQ0YWYtOWJhYi0wODYxODg1YTc1M2Q",
+        "personEmail": "olaf.vogel@klingelnberg.com",
+        "created": "2020-09-08T12:34:52.307Z",
+        "updated": "2020-09-08T12:38:53.441Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvMjliMzkyNjAtZjFjZi0xMWVhLTk0MWYtMGY4ZGNhNzRhY2Fj",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vYjU3ODdjNGUtM2MyZC0zMWNjLWEzOTUtOTUwMTczYjdhNTdi",
+        "roomType": "direct",
+        "text": "Hey Sanket, nice hearing from you! I am doing fine. Hope you are alright and able to deal with COVID situation.",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS80MDhmODJkNy0zZDUxLTQ0YWYtOWJhYi0wODYxODg1YTc1M2Q",
+        "personEmail": "olaf.vogel@klingelnberg.com",
+        "created": "2020-09-08T12:31:04.838Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvMGMzZjhhNDAtZjFjYS0xMWVhLWI0MTQtMzk1Yzc5NmIzYThl",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vYjU3ODdjNGUtM2MyZC0zMWNjLWEzOTUtOTUwMTczYjdhNTdi",
+        "roomType": "direct",
+        "text": "+one more",
+        "files": [
+            "https://webexapis.com/v1/contents/Y2lzY29zcGFyazovL3VzL0NPTlRFTlQvMGMzZjhhNDAtZjFjYS0xMWVhLWI0MTQtMzk1Yzc5NmIzYThlLzA"
+        ],
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2020-09-08T11:54:27.940Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvMzM3ZTMwZDAtZjFjOS0xMWVhLTlkZWUtM2Y4ODlkNWNiN2Ni",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vYjU3ODdjNGUtM2MyZC0zMWNjLWEzOTUtOTUwMTczYjdhNTdi",
+        "roomType": "direct",
+        "text": "Hello Olaf, How are you doing ? its a long time being met you \ud83d\ude42\nHope you are doing good.\n\nI have some samples of the flag representation. and want your favorer to select one.\nabout the last one, it occupies more space of the control.\nor is it ok with the first one(only flag change) ?",
+        "files": [
+            "https://webexapis.com/v1/contents/Y2lzY29zcGFyazovL3VzL0NPTlRFTlQvMzM3ZTMwZDAtZjFjOS0xMWVhLTlkZWUtM2Y4ODlkNWNiN2NiLzA",
+            "https://webexapis.com/v1/contents/Y2lzY29zcGFyazovL3VzL0NPTlRFTlQvMzM3ZTMwZDAtZjFjOS0xMWVhLTlkZWUtM2Y4ODlkNWNiN2NiLzE",
+            "https://webexapis.com/v1/contents/Y2lzY29zcGFyazovL3VzL0NPTlRFTlQvMzM3ZTMwZDAtZjFjOS0xMWVhLTlkZWUtM2Y4ODlkNWNiN2NiLzI"
+        ],
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2020-09-08T11:48:24.285Z"
+    }
+]

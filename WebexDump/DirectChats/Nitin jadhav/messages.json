@@ -1,0 +1,204 @@
+[
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvMDA2ZmUwMDAtOTIyMS0xMWViLWJiYjMtNGYxZmU2NGE0Nzgz",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "5 min",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9jNDU0YTEyMi1iZmU3LTRhNzktYmM3MS1lMzM2MzNmZDUxZGU",
+        "personEmail": "nitin.jadhav@klingelnberg.com",
+        "created": "2021-03-31T13:00:00.384Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvZWE0ZTk3ODAtOTIyMC0xMWViLWFhYTktNzU3ZWM0ZDA4NzNh",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "yetoy ka ?",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2021-03-31T12:59:23.256Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvNzc0ZjdiMzAtOGJkMy0xMWViLTkyOTAtZmIzMDVhYTc5MjBh",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "yes",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9jNDU0YTEyMi1iZmU3LTRhNzktYmM3MS1lMzM2MzNmZDUxZGU",
+        "personEmail": "nitin.jadhav@klingelnberg.com",
+        "created": "2021-03-23T12:29:52.099Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvNzI5NTc1OTAtOGJkMy0xMWViLTg0NjktYTE3MmM3NGQ1MWVi",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "can you come here ?",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2021-03-23T12:29:44.169Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvZmM0ODQ1YzAtOGJkMi0xMWViLThhNmMtM2JhOGIwMjZhMDVi",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "extra parameter of which type?",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9jNDU0YTEyMi1iZmU3LTRhNzktYmM3MS1lMzM2MzNmZDUxZGU",
+        "personEmail": "nitin.jadhav@klingelnberg.com",
+        "created": "2021-03-23T12:26:25.692Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvZGI0ZWNlMjAtOGJkMi0xMWViLThhNWQtMTMyYzVkZjUxMjI2",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "I think there should be an extra parameter you have to provide inside .open()",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2021-03-23T12:25:30.370Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvYjBiZTBiZDAtOGJkMi0xMWViLWFkMmYtZDc4NmU4NzAwN2Ix",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "nothing is provided",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9jNDU0YTEyMi1iZmU3LTRhNzktYmM3MS1lMzM2MzNmZDUxZGU",
+        "personEmail": "nitin.jadhav@klingelnberg.com",
+        "created": "2021-03-23T12:24:18.957Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvMjNkN2FiYzAtOGJjZi0xMWViLWI3NjQtODlmMjRhYzVkNTI2",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "is there not anything provided by window.open ?",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2021-03-23T11:58:54.076Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvZjFjMTQwYjAtOGJjZS0xMWViLTk2OWEtZDkwZTljYTI5NWRk",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "Do you have any solution on.\nTo stay on same page when we open new tab with specific url by clicking on button.\nWe used window.open to do so.",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9jNDU0YTEyMi1iZmU3LTRhNzktYmM3MS1lMzM2MzNmZDUxZGU",
+        "personEmail": "nitin.jadhav@klingelnberg.com",
+        "created": "2021-03-23T11:57:30.043Z",
+        "updated": "2021-03-23T11:57:38.733Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvYzA1ZmNkYzAtOGJjZS0xMWViLWIyYjMtYWY4NzA3YThiNDcz",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "hi",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2021-03-23T11:56:07.196Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvYWY5YzZjMDAtOGJjZS0xMWViLWE0OGYtYzViYmYxZDEzZmFh",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "Hi",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9jNDU0YTEyMi1iZmU3LTRhNzktYmM3MS1lMzM2MzNmZDUxZGU",
+        "personEmail": "nitin.jadhav@klingelnberg.com",
+        "created": "2021-03-23T11:55:39.072Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvYjBkY2RjODAtODhiMy0xMWViLTkwOWYtZGRmNmJlZWQ5NTU1",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "Yes",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9jNDU0YTEyMi1iZmU3LTRhNzktYmM3MS1lMzM2MzNmZDUxZGU",
+        "personEmail": "nitin.jadhav@klingelnberg.com",
+        "created": "2021-03-19T13:04:51.272Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvYWE3Y2VmMTAtODhiMy0xMWViLWJlNjYtZjMwMzg5YzY1MmFh",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "chaltoy ka ?",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2021-03-19T13:04:40.577Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvMTVlMTZjMzAtNWFkOS0xMWViLWJiOWUtYTcxMWQxNjNlYmNm",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "Good morning",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2021-01-20T04:36:38.643Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvNGYyMGU4NzAtNWFkNi0xMWViLThhNzgtYjUwZTEzYjMyMGMz",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "good morning",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9jNDU0YTEyMi1iZmU3LTRhNzktYmM3MS1lMzM2MzNmZDUxZGU",
+        "personEmail": "nitin.jadhav@klingelnberg.com",
+        "created": "2021-01-20T04:16:46.199Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvNGJlZTZkMzAtNWFkNi0xMWViLWFmNmEtMGI2MzM3YTIxODBl",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "Hi",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9jNDU0YTEyMi1iZmU3LTRhNzktYmM3MS1lMzM2MzNmZDUxZGU",
+        "personEmail": "nitin.jadhav@klingelnberg.com",
+        "created": "2021-01-20T04:16:40.835Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvYzU2NWNlYzAtNTU4Zi0xMWViLWI3YWEtZjEwNDU4Y2Y5ZjMz",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "Popovers \u00b7 Bootstrap (getbootstrap.com)",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "html": "<p><a href=\"https://getbootstrap.com/docs/4.0/components/popovers/\">Popovers \u00b7 Bootstrap (getbootstrap.com)</a></p>",
+        "created": "2021-01-13T11:09:14.540Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvYzFhNmY5ODAtNTQwNC0xMWViLTk2ZGMtOTk3NjE2ODJmZTA3",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "css - Table column sizing - Stack Overflow",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "html": "<p><a href=\"https://stackoverflow.com/questions/37924104/table-column-sizing\">css - Table column sizing - Stack Overflow</a></p>",
+        "created": "2021-01-11T12:01:37.048Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvMzUzNmFjNzAtNTQwNC0xMWViLTlmZWUtM2ZhMTg1MTVmZGI4",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "hello",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2021-01-11T11:57:41.431Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvOTY1NjIyZTAtNTQwMS0xMWViLWI2MGMtNGRlZWIyYzc5NTc5",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "after 5 min ? I will ping you.",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2021-01-11T11:38:55.886Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvODVhMzhhMDAtNTQwMS0xMWViLWI0NjEtMzVhNjkwNDZiNzUw",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "Can we have call now?",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9jNDU0YTEyMi1iZmU3LTRhNzktYmM3MS1lMzM2MzNmZDUxZGU",
+        "personEmail": "nitin.jadhav@klingelnberg.com",
+        "created": "2021-01-11T11:38:27.872Z",
+        "updated": "2021-01-11T11:38:34.176Z"
+    },
+    {
+        "id": "Y2lzY29zcGFyazovL3VzL01FU1NBR0UvN2VjN2RjZTAtNTQwMS0xMWViLTg4MWEtNTU2ZTI2MDViMDdh",
+        "roomId": "Y2lzY29zcGFyazovL3VzL1JPT00vNzMzODA4M2QtNTliNS0zMGFiLTllNjAtNTYzYjA2ZDIxNjc0",
+        "roomType": "direct",
+        "text": "Hello",
+        "personId": "Y2lzY29zcGFyazovL3VzL1BFT1BMRS9mY2EyOWI4Mi1hYjYxLTQ0NTMtOWRjNS1mNjQ5YjEzOWY0ZGU",
+        "personEmail": "Sanket.Naik@klingelnberg.com",
+        "created": "2021-01-11T11:38:16.366Z"
+    }
+]
