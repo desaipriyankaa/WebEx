@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebEx_ChatHistory_Viewer"
         mc:Ignorable="d"
-         Background="Gray"
+         Background=" #A8D8F0"
         WindowStyle="None"
         AllowsTransparency="True"
         ResizeMode="CanResizeWithGrip"
@@ -23,7 +23,7 @@
         </Grid.ColumnDefinitions>
 
         <Border Grid.ColumnSpan="2"
-                Background="#252525"
+                Background="MidnightBlue"
                 MouseDown="Border_MouseDown">
 
             <Grid HorizontalAlignment="Stretch">
@@ -63,7 +63,7 @@
         </Border>
 
         <!--column no 1-->
-        <Grid Background="DarkGray"
+        <Grid Background="AliceBlue"
               Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
@@ -76,10 +76,8 @@
                    Foreground="Black"
                    Margin="8,0,0,0"/>
 
-            <ListView ItemsSource="{Binding Contacts}"
-                      x:Name="myFolders"
+            <ListView x:Name="myFolders"
                       Background="Transparent"
-                      BorderThickness="0"
                       Grid.Row="1"
                       SelectionChanged="ChatItemSelected"
                 />
@@ -94,25 +92,37 @@
             </Grid.ColumnDefinitions>
 
             <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Visible">
-                <StackPanel x:Name="MyStack" 
+                <StackPanel x:Name="ParentStack" 
                         Margin="10,70,10,10"
-                            Background="DarkGray"/>
+                            Background="AliceBlue">
+
+                    <!--<Image Name="ImageViewer"
+                       Width="200"
+                       Height="200"
+                       Margin="30,70,10,10"
+                       HorizontalAlignment="Left"/>-->
+
+                </StackPanel>
             </ScrollViewer>
-           
-            <StackPanel>
+
+
+            <!--<StackPanel Name="ImageStack">
                 <Image Name="ImageViewer1"
-                       Width="500"
-                       Margin="10,70,10,10" />
-            </StackPanel>
+                       Width="200"
+                       Height="200"
+                       Margin="30,70,10,10"
+                       HorizontalAlignment="Left"/>
+            </StackPanel>-->
 
             <StackPanel HorizontalAlignment="Right"
                         Orientation="Horizontal">
-                <Button Content="Media" 
+                
+                <!--<Button Content="Media" 
                     Height="50" Width="100"
                     HorizontalAlignment="Left"
                     Margin="10,10,0,0"
                     VerticalAlignment="Top"
-                    Click="Media_Button_Click"/>
+                    Click="Media_Button_Click"/>-->
 
                 <Button x:Name="Browse_button" Content="Browse"
                     Height="50" Width="100"

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
@@ -7,7 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using Service.Library;
 using Path = System.IO.Path;
-using TextBox = System.Windows.Controls.TextBox;
+using TextBlock = System.Windows.Controls.TextBox;
 using WinForms = System.Windows;
 
 namespace WebEx_ChatHistory_Viewer
@@ -106,94 +107,194 @@ namespace WebEx_ChatHistory_Viewer
 
         private void ChatItemSelected(object sender, SelectionChangedEventArgs e)
         {
-            MyStack.Children.Clear();
+            var ChildStack = CreateNewStackPanelDynamicallyForOtherUsersChat();
+            ParentStack.Children.Add(ChildStack);
+        }
+
+        /// <summary>
+        /// Create StackPanel dynamically
+        /// </summary>
+        /// <param name="files"></param>
+        /// <returns></returns>
+
+        private StackPanel CreateNewStackPanelDynamicallyForOtherUsersChat()
+        {
+            ParentStack.Children.Clear();
+            string data = "";
             object selectChat = myFolders.SelectedItem;
+            StackPanel stackPanel = new StackPanel();
+
             if (selectChat != null)
             {
                 string filename = Path.Join(BasePath, selectChat.ToString(), "messages.json");
-               
-                List<Messages> msg= _services.ReadUserChatData(filename);
+                List<Messages> msg = _services.ReadUserChatData(filename);
 
-                
                 foreach (var item in msg)
                 {
-                    string data = "";
-
-                    if (item.Files != null)
+                    //For Others chat
+                    if (item.PersonEmail != "Sanket.Naik")
                     {
-                        foreach (var item1 in item.Files)
+
+                        //Add stackpanel dynamically
+                        StackPanel stackPanel1 = new StackPanel();
+                        stackPanel1.Background = Brushes.Lavender;
+                        stackPanel1.Margin = new Thickness(5);
+                        stackPanel1.HorizontalAlignment = WinForms.HorizontalAlignment.Left;
+
+                        if (item.Files != null)
                         {
-                            data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n " + item1 + " \n ";
+                            foreach (var item1 in item.Files)
+                            {
+                                string imgName = SplitFilesToFindImageName(item1) ;
+                                string imgFullPath = Path.Join(BasePath, selectChat.ToString(), imgName);
+
+                                //Add Image
+                                BitmapImage bitmapImage = new BitmapImage();
+                                bitmapImage.BeginInit();
+                                bitmapImage.UriSource = new System.Uri(imgFullPath);
+                                bitmapImage.EndInit();
+                                Image image = new Image();
+                                image.Height = 200;
+                                image.Source = bitmapImage;
+
+                                stackPanel1.Children.Add(image);
+
+                                data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
+
+                                if (item.Text == null)
+                                {
+                                    data = item.PersonEmail + "     " + item.Created + " \n ";
+                                }
+                            }
                         }
+                        else
+                        {
+                            data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
+                        }
+
+                        //Add textblock dynamically
+                        TextBlock textBlock = new TextBlock();
+                        textBlock.Background = Brushes.Transparent;
+                        textBlock.Width = 400;
+                        textBlock.Padding = new Thickness(10, 5, 10, 0);
+                        textBlock.Margin = new Thickness(5);
+                        textBlock.HorizontalAlignment = WinForms.HorizontalAlignment.Left;
+                        textBlock.TextWrapping = TextWrapping.Wrap;
+                        textBlock.IsReadOnly = true;
+                        textBlock.Text = data;
+
+                        stackPanel1.Children.Add(textBlock);
+                        stackPanel.Children.Add(stackPanel1);
                     }
 
-                    else
-                    {
-                        data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n " ;
-                    }
-                    
-                    TextBox textBox = new TextBox();
-                    textBox.Background = Brushes.Lavender;
-                    textBox.Padding = new Thickness(10,5,10,0);
-                    textBox.Margin = new Thickness(10);
-                    textBox.Width = 400;
-                    textBox.HorizontalAlignment = WinForms.HorizontalAlignment.Left;
-                    textBox.TextWrapping = TextWrapping.Wrap;
-                    textBox.IsReadOnly = true;
 
-                    textBox.Text = data;
-
-                    MyStack.Children.Add(textBox);
-
-
+                    //for "Sanket.Naik"
                     if (item.PersonEmail == "Sanket.Naik")
                     {
-                        textBox.Background = Brushes.LightGreen;
-                        textBox.Width = 400;
-                        textBox.HorizontalAlignment = WinForms.HorizontalAlignment.Right;
+                        //Add stackpanel dynamically
+                        StackPanel stackPanel2 = new StackPanel();
+                        stackPanel2.Background = Brushes.LightGreen;
+                        stackPanel2.Margin = new Thickness(5);
+                        stackPanel2.HorizontalAlignment = WinForms.HorizontalAlignment.Right;
+
+                        if (item.Files != null)
+                        {
+                            foreach (var item1 in item.Files)
+                            {
+                                string imgName = SplitFilesToFindImageName(item1) + ".91f312cf-0562-42d3-a9c5-02aab5a5f0cc.PNG";
+                                string imgFullPath = Path.Join(BasePath, selectChat.ToString(), imgName);
+
+                                //Add Image
+                                BitmapImage bitmapImage = new BitmapImage();
+                                bitmapImage.BeginInit();
+                                bitmapImage.UriSource = new System.Uri(imgFullPath);
+                                bitmapImage.EndInit();
+                                Image image = new Image();
+                                image.Height = 200;
+                                image.Source = bitmapImage;
+
+                                stackPanel2.Children.Add(image);
+
+                                data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
+
+                                if (item.Text == null)
+                                {
+                                    data = item.PersonEmail + "     " + item.Created + " \n ";
+                                }
+                            }
+                        }
+                        else
+                        {
+                            data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
+                        }
+
+                        //Add textblock dynamically
+                        TextBlock textBlock = new TextBlock();
+                        textBlock.Background = Brushes.Transparent;
+                        textBlock.Width = 400;
+                        textBlock.Padding = new Thickness(10, 5, 10, 0);
+                        textBlock.Margin = new Thickness(5);
+                        textBlock.HorizontalAlignment = WinForms.HorizontalAlignment.Right;
+                        textBlock.TextWrapping = TextWrapping.Wrap;
+                        textBlock.IsReadOnly = true;
+                        textBlock.Text = data;
+
+                        stackPanel2.Children.Add(textBlock);
+                        stackPanel.Children.Add(stackPanel2);
                     }
                 }
             }
+            return stackPanel;
         }
 
-        private void Media_Button_Click(object sender, RoutedEventArgs e)
+        
+        public string SplitFilesToFindImageName(string files)
         {
-            //OpenFileDialog ofd = new OpenFileDialog();
-            //ofd.InitialDirectory = @"F:\PProject\WPF\WebexDump\DirectChats";
-            //var a = ofd.InitialDirectory;
-            //ofd.Filter = "Image files (*.PNG)|*.PNG|All Files(*.*)|*.*";
+            string[] parts = files.Split("contents/");
+            string url = parts[0];
+            string imagePath = parts[1];
 
-            //ofd.RestoreDirectory = true;
-
-            //if (ofd.ShowDialog() == WinForms.Forms.DialogResult.OK)
-            //{
-            //    string selectedFilename = ofd.FileName;
-            //    BitmapImage bitmap = new BitmapImage();
-            //    bitmap.BeginInit();
-            //    bitmap.UriSource = new System.Uri(selectedFilename);
-            //    bitmap.EndInit();
-            //    ImageViewer1.Source = bitmap;
-            //}
-
-            var selectChat = myFolders.SelectedItem;
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Image files (*.PNG)|*.PNG|All Files(*.*)|*.*";
-                      
-            if (selectChat != null)
-            {
-                string filename = Path.Join(BasePath, selectChat.ToString());
-
-                if (ofd.ShowDialog() == WinForms.Forms.DialogResult.OK)
-                {
-                    string selectedFilename = ofd.FileName;
-                    BitmapImage bitmap = new BitmapImage();
-                    bitmap.BeginInit();
-                    bitmap.UriSource = new System.Uri(selectedFilename);
-                    bitmap.EndInit();
-                    ImageViewer1.Source = bitmap;
-                }
-            }
+            return imagePath;
         }
+
+        //private void Media_Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    //OpenFileDialog ofd = new OpenFileDialog();
+        //    //ofd.InitialDirectory = @"F:\PProject\WPF\WebexDump\DirectChats";
+        //    //var a = ofd.InitialDirectory;
+        //    //ofd.Filter = "Image files (*.PNG)|*.PNG|All Files(*.*)|*.*";
+
+        //    //ofd.RestoreDirectory = true;
+
+        //    //if (ofd.ShowDialog() == WinForms.Forms.DialogResult.OK)
+        //    //{
+        //    //    string selectedFilename = ofd.FileName;
+        //    //    BitmapImage bitmap = new BitmapImage();
+        //    //    bitmap.BeginInit();
+        //    //    bitmap.UriSource = new System.Uri(selectedFilename);
+        //    //    bitmap.EndInit();
+        //    //    ImageViewer1.Source = bitmap;
+        //    //}
+
+        //    var selectChat = myFolders.SelectedItem;
+        //    OpenFileDialog ofd = new OpenFileDialog();
+        //    ofd.Filter = "Image files (*.PNG)|*.PNG|All Files(*.*)|*.*";
+                      
+        //    if (selectChat != null)
+        //    {
+        //        string filename = Path.Join(BasePath, selectChat.ToString());
+
+        //        if (ofd.ShowDialog() == WinForms.Forms.DialogResult.OK)
+        //        {
+        //            string selectedFilename = ofd.FileName;
+        //            BitmapImage bitmap = new BitmapImage();
+        //            bitmap.BeginInit();
+        //            bitmap.UriSource = new System.Uri(selectedFilename);
+        //            bitmap.EndInit();
+        //            ImageViewer1.Source = bitmap;
+        //        }
+        //    }
+        //}
     }
 }
 
