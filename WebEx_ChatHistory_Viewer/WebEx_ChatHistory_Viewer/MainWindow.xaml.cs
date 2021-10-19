@@ -130,7 +130,6 @@ namespace WebEx_ChatHistory_Viewer
             {
                 string filename = Path.Join(BasePath, selectChat.ToString(), "messages.json");
                 List<Messages> msg = _services.ReadUserChatData(filename);
-
                 var localImagesPath = GetImagesPath(Path.Join(BasePath, selectChat.ToString()));
 
                 foreach (var item in msg)

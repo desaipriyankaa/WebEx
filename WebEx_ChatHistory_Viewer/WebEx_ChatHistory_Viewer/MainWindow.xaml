@@ -22,6 +22,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
+        <!--Title Bar-->
         <Border Grid.ColumnSpan="2"
                 Background="MidnightBlue"
                 MouseDown="Border_MouseDown">
@@ -31,6 +32,7 @@
                        Foreground="White"
                        FontWeight="SemiBold"/>
 
+                <!--Minimize, Maximize, Close-->
                 <StackPanel HorizontalAlignment="Right"
                             Orientation="Horizontal">
 
