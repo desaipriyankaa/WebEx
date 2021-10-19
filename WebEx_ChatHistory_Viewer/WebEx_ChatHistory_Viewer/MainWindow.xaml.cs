@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
@@ -107,7 +107,7 @@ namespace WebEx_ChatHistory_Viewer
 
         private void ChatItemSelected(object sender, SelectionChangedEventArgs e)
         {
-            var ChildStack = CreateNewStackPanelDynamicallyForOtherUsersChat();
+            var ChildStack = CreateNewStackPanelDynamically();
             ParentStack.Children.Add(ChildStack);
         }
 
@@ -117,17 +117,21 @@ namespace WebEx_ChatHistory_Viewer
         /// <param name="files"></param>
         /// <returns></returns>
 
-        private StackPanel CreateNewStackPanelDynamicallyForOtherUsersChat()
+        private StackPanel CreateNewStackPanelDynamically()
         {
             ParentStack.Children.Clear();
             string data = "";
             object selectChat = myFolders.SelectedItem;
+
+            
             StackPanel stackPanel = new StackPanel();
 
             if (selectChat != null)
             {
                 string filename = Path.Join(BasePath, selectChat.ToString(), "messages.json");
                 List<Messages> msg = _services.ReadUserChatData(filename);
+
+                var localImagesPath = GetImagesPath(Path.Join(BasePath, selectChat.ToString()));
 
                 foreach (var item in msg)
                 {
@@ -145,19 +149,21 @@ namespace WebEx_ChatHistory_Viewer
                         {
                             foreach (var item1 in item.Files)
                             {
-                                string imgName = SplitFilesToFindImageName(item1) ;
-                                string imgFullPath = Path.Join(BasePath, selectChat.ToString(), imgName);
+                                string imgNameFromJSON = SplitFilesToFindImageName(item1);
+                                var imageFullName = localImagesPath.FindAll(i => i.Contains(imgNameFromJSON));
+                                foreach (var singleImageName in imageFullName)
+                                {
+                                    //Add Image
+                                    BitmapImage bitmapImage = new BitmapImage();
+                                    bitmapImage.BeginInit();
+                                    bitmapImage.UriSource = new System.Uri(singleImageName);
+                                    bitmapImage.EndInit();
+                                    Image image = new Image();
+                                    image.Height = 200;
+                                    image.Source = bitmapImage;
 
-                                //Add Image
-                                BitmapImage bitmapImage = new BitmapImage();
-                                bitmapImage.BeginInit();
-                                bitmapImage.UriSource = new System.Uri(imgFullPath);
-                                bitmapImage.EndInit();
-                                Image image = new Image();
-                                image.Height = 200;
-                                image.Source = bitmapImage;
-
-                                stackPanel1.Children.Add(image);
+                                    stackPanel1.Children.Add(image);
+                                }
 
                                 data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
 
@@ -201,19 +207,21 @@ namespace WebEx_ChatHistory_Viewer
                         {
                             foreach (var item1 in item.Files)
                             {
-                                string imgName = SplitFilesToFindImageName(item1) + ".91f312cf-0562-42d3-a9c5-02aab5a5f0cc.PNG";
-                                string imgFullPath = Path.Join(BasePath, selectChat.ToString(), imgName);
+                                string imgNameFromJSON = SplitFilesToFindImageName(item1);
+                                var imageFullName = localImagesPath.FindAll(i => i.Contains(imgNameFromJSON));
+                                foreach (var singleImageName in imageFullName)
+                                {
+                                    //Add Image
+                                    BitmapImage bitmapImage = new BitmapImage();
+                                    bitmapImage.BeginInit();
+                                    bitmapImage.UriSource = new System.Uri(singleImageName);
+                                    bitmapImage.EndInit();
+                                    Image image = new Image();
+                                    image.Height = 200;
+                                    image.Source = bitmapImage;
 
-                                //Add Image
-                                BitmapImage bitmapImage = new BitmapImage();
-                                bitmapImage.BeginInit();
-                                bitmapImage.UriSource = new System.Uri(imgFullPath);
-                                bitmapImage.EndInit();
-                                Image image = new Image();
-                                image.Height = 200;
-                                image.Source = bitmapImage;
-
-                                stackPanel2.Children.Add(image);
+                                    stackPanel2.Children.Add(image);
+                                }
 
                                 data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
 
@@ -247,7 +255,25 @@ namespace WebEx_ChatHistory_Viewer
             return stackPanel;
         }
 
-        
+        private List<string> GetImagesPath(string folderName)
+        {
+
+            DirectoryInfo Folder;
+            FileInfo[] Images;
+
+            Folder = new DirectoryInfo(folderName);
+            Images = Folder.GetFiles();
+            List<string> imagesList = new List<string>();
+
+            for (int i = 0; i < Images.Length; i++)
+            {
+                imagesList.Add(string.Format(@"{0}/{1}", folderName, Images[i].Name));
+            }
+
+
+            return imagesList;
+        }
+
         public string SplitFilesToFindImageName(string files)
         {
             string[] parts = files.Split("contents/");
@@ -256,45 +282,6 @@ namespace WebEx_ChatHistory_Viewer
 
             return imagePath;
         }
-
-        //private void Media_Button_Click(object sender, RoutedEventArgs e)
-        //{
-        //    //OpenFileDialog ofd = new OpenFileDialog();
-        //    //ofd.InitialDirectory = @"F:\PProject\WPF\WebexDump\DirectChats";
-        //    //var a = ofd.InitialDirectory;
-        //    //ofd.Filter = "Image files (*.PNG)|*.PNG|All Files(*.*)|*.*";
-
-        //    //ofd.RestoreDirectory = true;
-
-        //    //if (ofd.ShowDialog() == WinForms.Forms.DialogResult.OK)
-        //    //{
-        //    //    string selectedFilename = ofd.FileName;
-        //    //    BitmapImage bitmap = new BitmapImage();
-        //    //    bitmap.BeginInit();
-        //    //    bitmap.UriSource = new System.Uri(selectedFilename);
-        //    //    bitmap.EndInit();
-        //    //    ImageViewer1.Source = bitmap;
-        //    //}
-
-        //    var selectChat = myFolders.SelectedItem;
-        //    OpenFileDialog ofd = new OpenFileDialog();
-        //    ofd.Filter = "Image files (*.PNG)|*.PNG|All Files(*.*)|*.*";
-                      
-        //    if (selectChat != null)
-        //    {
-        //        string filename = Path.Join(BasePath, selectChat.ToString());
-
-        //        if (ofd.ShowDialog() == WinForms.Forms.DialogResult.OK)
-        //        {
-        //            string selectedFilename = ofd.FileName;
-        //            BitmapImage bitmap = new BitmapImage();
-        //            bitmap.BeginInit();
-        //            bitmap.UriSource = new System.Uri(selectedFilename);
-        //            bitmap.EndInit();
-        //            ImageViewer1.Source = bitmap;
-        //        }
-        //    }
-        //}
     }
 }
 
