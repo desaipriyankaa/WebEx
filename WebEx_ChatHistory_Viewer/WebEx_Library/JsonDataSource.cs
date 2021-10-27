@@ -17,8 +17,7 @@ namespace Service.Library
                 StreamReader reader = fileInfo.OpenText();
                 string str = reader.ReadToEnd();
 
-                messages = JsonConvert.DeserializeObject<List<Messages>>(str);         
-                               
+                messages = JsonConvert.DeserializeObject<List<Messages>>(str);                            
             }
 
             foreach (var item in messages)
@@ -39,51 +38,11 @@ namespace Service.Library
             return username;
         }
 
-        //public List<Messages> MessageAlignment()
-        //{
-        //    string email = "Sanket.Naik@klingelnberg.com";
-
-        //    List<Messages> msg = new List<Messages>();
-
-        //    foreach (var item in msg)
-        //    {
-        //        if (item.PersonEmail == email)
-        //        {
-        //           msg = email.PadRight(10);
-        //        }
-        //    }
-        //    return msg;
-        //}
-
-        //public string MessagesWithoutPropertyFields(List<Messages> msg)
-        //{
-        //    string str = "";
-
-        //    foreach (var item in msg)
-        //    {
-        //        str = str + "\n" + item.ToString() + "\n";
-        //    }
-        //    return str;
-
-        //}
-
-
         public string[] ReadUsers(string path)
         {
             string[] dirs = Directory.GetDirectories(path);
             return dirs;          
         }
         
-    }
-
-    public class Messages
-    {
-        public string PersonEmail { get; set; }
-
-        public string Text { get; set; }
-        public DateTime Created { get; set; }
-        public List<string> Files { get; set; }
-
-
     }
 }

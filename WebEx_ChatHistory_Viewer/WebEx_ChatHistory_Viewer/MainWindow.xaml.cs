@@ -7,6 +7,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using Service.Library;
+using Button = System.Windows.Controls.Button;
 using Path = System.IO.Path;
 using TextBlock = System.Windows.Controls.TextBox;
 using WinForms = System.Windows;
@@ -123,52 +124,51 @@ namespace WebEx_ChatHistory_Viewer
             string data = "";
             object selectChat = myFolders.SelectedItem;
 
-            
             StackPanel stackPanel = new StackPanel();
 
             if (selectChat != null)
             {
                 string filename = Path.Join(BasePath, selectChat.ToString(), "messages.json");
                 List<Messages> msg = _services.ReadUserChatData(filename);
-                var localImagesPath = GetImagesPath(Path.Join(BasePath, selectChat.ToString()));
+                List<string> localImagesPath = GetImagesPath(Path.Join(BasePath, selectChat.ToString()));
 
                 foreach (var item in msg)
                 {
                     //For Others chat
                     if (item.PersonEmail != "Sanket.Naik")
                     {
+                        StackPanel stackPanel1 = GetStackPanel(Brushes.Lavender, WinForms.HorizontalAlignment.Left);
 
-                        //Add stackpanel dynamically
-                        StackPanel stackPanel1 = new StackPanel();
-                        stackPanel1.Background = Brushes.Lavender;
-                        stackPanel1.Margin = new Thickness(5);
-                        stackPanel1.HorizontalAlignment = WinForms.HorizontalAlignment.Left;
+                        // Check for Text is present or not
+                        if (item.Text != null)
+                        {
+                            data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
+                        }
+                        else if (item.Text == null)
+                        {
+                            data = item.PersonEmail + "     " + item.Created + " \n ";
+                        }
 
+                        TextBlock textBlock = GetTextBlock(data, WinForms.HorizontalAlignment.Left);
+                        stackPanel1.Children.Add(textBlock);
+
+                        //Check for Image is present or not
                         if (item.Files != null)
                         {
-                            foreach (var item1 in item.Files)
+                            foreach (string item1 in item.Files)
                             {
                                 string imgNameFromJSON = SplitFilesToFindImageName(item1);
-                                var imageFullName = localImagesPath.FindAll(i => i.Contains(imgNameFromJSON));
+                                List<string> imageFullName = localImagesPath.FindAll(i => i.Contains(imgNameFromJSON));
                                 foreach (var singleImageName in imageFullName)
                                 {
                                     //Add Image
-                                    BitmapImage bitmapImage = new BitmapImage();
-                                    bitmapImage.BeginInit();
-                                    bitmapImage.UriSource = new System.Uri(singleImageName);
-                                    bitmapImage.EndInit();
-                                    Image image = new Image();
-                                    image.Height = 200;
-                                    image.Source = bitmapImage;
+                                    Image image = GetImage(singleImageName);
+                                    Button button = new Button();
+                                    button.Content = image;
+                                    button.Background = Brushes.Transparent;
+                                    stackPanel1.Children.Add(button);
 
-                                    stackPanel1.Children.Add(image);
-                                }
-
-                                data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
-
-                                if (item.Text == null)
-                                {
-                                    data = item.PersonEmail + "     " + item.Created + " \n ";
+                                    button.Click += ZoomImage_Click;
                                 }
                             }
                         }
@@ -176,19 +176,6 @@ namespace WebEx_ChatHistory_Viewer
                         {
                             data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
                         }
-
-                        //Add textblock dynamically
-                        TextBlock textBlock = new TextBlock();
-                        textBlock.Background = Brushes.Transparent;
-                        textBlock.Width = 400;
-                        textBlock.Padding = new Thickness(10, 5, 10, 0);
-                        textBlock.Margin = new Thickness(5);
-                        textBlock.HorizontalAlignment = WinForms.HorizontalAlignment.Left;
-                        textBlock.TextWrapping = TextWrapping.Wrap;
-                        textBlock.IsReadOnly = true;
-                        textBlock.Text = data;
-
-                        stackPanel1.Children.Add(textBlock);
                         stackPanel.Children.Add(stackPanel1);
                     }
 
@@ -196,37 +183,37 @@ namespace WebEx_ChatHistory_Viewer
                     //for "Sanket.Naik"
                     if (item.PersonEmail == "Sanket.Naik")
                     {
-                        //Add stackpanel dynamically
-                        StackPanel stackPanel2 = new StackPanel();
-                        stackPanel2.Background = Brushes.LightGreen;
-                        stackPanel2.Margin = new Thickness(5);
-                        stackPanel2.HorizontalAlignment = WinForms.HorizontalAlignment.Right;
+                        StackPanel stackPanel2 = GetStackPanel(Brushes.LightGreen, WinForms.HorizontalAlignment.Right);
 
+                        // Check for Text is present or not
+                        if (item.Text != null)
+                        {
+                            data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
+                        }
+                        if (item.Text == null)
+                        {
+                            data = item.PersonEmail + "     " + item.Created + " \n ";
+                        }
+
+                        TextBlock textBlock = GetTextBlock(data, WinForms.HorizontalAlignment.Right);
+                        stackPanel2.Children.Add(textBlock);
+
+                        //Check for Image is present or not
                         if (item.Files != null)
                         {
-                            foreach (var item1 in item.Files)
+                            foreach (string item1 in item.Files)
                             {
                                 string imgNameFromJSON = SplitFilesToFindImageName(item1);
-                                var imageFullName = localImagesPath.FindAll(i => i.Contains(imgNameFromJSON));
-                                foreach (var singleImageName in imageFullName)
+                                List<string> imageFullName = localImagesPath.FindAll(i => i.Contains(imgNameFromJSON));
+                                foreach (string singleImageName in imageFullName)
                                 {
-                                    //Add Image
-                                    BitmapImage bitmapImage = new BitmapImage();
-                                    bitmapImage.BeginInit();
-                                    bitmapImage.UriSource = new System.Uri(singleImageName);
-                                    bitmapImage.EndInit();
-                                    Image image = new Image();
-                                    image.Height = 200;
-                                    image.Source = bitmapImage;
+                                    Image image = GetImage(singleImageName);
+                                    Button button = new Button();
+                                    button.Content = image;
+                                    button.Background = Brushes.Transparent;
+                                    stackPanel2.Children.Add(button);
 
-                                    stackPanel2.Children.Add(image);
-                                }
-
-                                data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
-
-                                if (item.Text == null)
-                                {
-                                    data = item.PersonEmail + "     " + item.Created + " \n ";
+                                    button.Click += ZoomImage_Click;
                                 }
                             }
                         }
@@ -234,25 +221,88 @@ namespace WebEx_ChatHistory_Viewer
                         {
                             data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
                         }
-
-                        //Add textblock dynamically
-                        TextBlock textBlock = new TextBlock();
-                        textBlock.Background = Brushes.Transparent;
-                        textBlock.Width = 400;
-                        textBlock.Padding = new Thickness(10, 5, 10, 0);
-                        textBlock.Margin = new Thickness(5);
-                        textBlock.HorizontalAlignment = WinForms.HorizontalAlignment.Right;
-                        textBlock.TextWrapping = TextWrapping.Wrap;
-                        textBlock.IsReadOnly = true;
-                        textBlock.Text = data;
-
-                        stackPanel2.Children.Add(textBlock);
                         stackPanel.Children.Add(stackPanel2);
                     }
                 }
             }
             return stackPanel;
         }
+
+        private void ZoomImage_Click(object sender, RoutedEventArgs e)
+        {
+            ImgStack.Visibility = Visibility.Visible;
+            Button srcButton = e.Source as Button;
+            Image a = srcButton.Content as Image;
+            ImageSource p = a.Source;
+
+            BitmapImage bitmapImage = new BitmapImage();
+            bitmapImage.BeginInit();
+            bitmapImage.UriSource = new System.Uri(p.ToString());
+            bitmapImage.EndInit();
+            Image image = new Image();
+            image.Height = 800;
+            image.Width = 1000;
+            image.Source = bitmapImage;
+            //this.Content = image;
+
+            StackPanel stackPanel = new StackPanel();
+            stackPanel.Background = Brushes.LightGray;
+            stackPanel.Children.Add(image);
+            Button button = new Button();
+            button.HorizontalAlignment = WinForms.HorizontalAlignment.Left;
+            button.Content = "Back";
+            button.FontSize = 20;
+            button.Width = 100;
+            button.Height = 50;
+            button.Margin = new Thickness(10,10,10,10);
+            button.Click += BackButton_Click;
+            stackPanel.Children.Add(button);
+            frame.Navigate(stackPanel);
+            
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            ImgStack.Visibility = Visibility.Hidden;
+        }
+
+        private static StackPanel GetStackPanel(Brush brush, WinForms.HorizontalAlignment horizontalAlignment)
+        {
+            StackPanel stackPanel1 = new StackPanel();
+            stackPanel1.Background = brush;
+            stackPanel1.Margin = new Thickness(5);
+            stackPanel1.HorizontalAlignment = horizontalAlignment;
+            return stackPanel1;
+        }
+
+        private static Image GetImage(string ImageName)
+        {
+            BitmapImage bitmapImage = new BitmapImage();
+            bitmapImage.BeginInit();
+            bitmapImage.UriSource = new System.Uri(ImageName);
+            bitmapImage.EndInit();
+            Image image = new Image();
+            image.Height = 200;
+            image.Width = 400;
+            image.Source = bitmapImage;
+            return image;
+        }
+
+        
+        private static TextBlock GetTextBlock(string text, WinForms.HorizontalAlignment horizontalAlignment)
+        {
+            TextBlock textBlock = new TextBlock();
+            textBlock.Background = Brushes.Transparent;
+            textBlock.Width = 400;
+            textBlock.Padding = new Thickness(10, 5, 10, 0);
+            textBlock.Margin = new Thickness(5);
+            textBlock.HorizontalAlignment = horizontalAlignment;
+            textBlock.TextWrapping = TextWrapping.Wrap;
+            textBlock.IsReadOnly = true;
+            textBlock.Text = text;
+            return textBlock;
+        }
+
 
         private List<string> GetImagesPath(string folderName)
         {

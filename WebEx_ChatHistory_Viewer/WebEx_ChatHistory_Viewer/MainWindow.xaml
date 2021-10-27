@@ -22,7 +22,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <!--Title Bar-->
+        <!--Title Bar in midnight blue color-->
         <Border Grid.ColumnSpan="2"
                 Background="MidnightBlue"
                 MouseDown="Border_MouseDown">
@@ -96,10 +96,13 @@
             <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Visible">
                 <StackPanel x:Name="ParentStack" 
                         Margin="10,70,10,10"
-                            Background="AliceBlue">
-
-                </StackPanel>
+                            Background="AliceBlue"/>
             </ScrollViewer>
+            <StackPanel x:Name="ImgStack"
+                        Margin="20,70,60,10">
+                <Frame x:Name="frame" NavigationUIVisibility="Automatic">
+                </Frame>
+            </StackPanel>
 
             <StackPanel HorizontalAlignment="Right"
                         Orientation="Horizontal">
@@ -110,7 +113,6 @@
                     VerticalAlignment="Top"
                     Margin="10,10,30,0"
                     Click="Browse_button_Click" Grid.Column="1"/>
-                
             </StackPanel>
         </Grid>
     </Grid>
