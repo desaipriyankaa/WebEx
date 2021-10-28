@@ -243,22 +243,32 @@ namespace WebEx_ChatHistory_Viewer
             image.Height = 800;
             image.Width = 1000;
             image.Source = bitmapImage;
-            //this.Content = image;
+            StackPanel btnStack = CloseButtonStack();
 
             StackPanel stackPanel = new StackPanel();
             stackPanel.Background = Brushes.LightGray;
+            stackPanel.Orientation = WinForms.Controls.Orientation.Vertical;
+
+            stackPanel.Children.Add(btnStack);
             stackPanel.Children.Add(image);
+            frame.Navigate(stackPanel);
+
+        }
+
+        private StackPanel CloseButtonStack()
+        {
+            StackPanel btnStack = new StackPanel();
+            btnStack.Orientation = WinForms.Controls.Orientation.Horizontal;
             Button button = new Button();
-            button.HorizontalAlignment = WinForms.HorizontalAlignment.Left;
-            button.Content = "Back";
+            button.HorizontalAlignment = WinForms.HorizontalAlignment.Right;
+            button.Content = "Close";
             button.FontSize = 20;
             button.Width = 100;
             button.Height = 50;
-            button.Margin = new Thickness(10,10,10,10);
+            button.Margin = new Thickness(1500, 10, 10, 10);
             button.Click += BackButton_Click;
-            stackPanel.Children.Add(button);
-            frame.Navigate(stackPanel);
-            
+            btnStack.Children.Add(button);
+            return btnStack;
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
