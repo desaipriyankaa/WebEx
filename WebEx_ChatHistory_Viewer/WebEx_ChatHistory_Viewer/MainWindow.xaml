@@ -4,12 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebEx_ChatHistory_Viewer"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-         Background=" #A8D8F0"
+        Background=" #A8D8F0"
         WindowStyle="None"
         AllowsTransparency="True"
         ResizeMode="CanResizeWithGrip"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="1200">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
@@ -84,10 +85,9 @@
             <ListView x:Name="myFolders"
                       Background="Transparent"
                       Grid.Row="1"
-                      Margin="20"
+                      Margin="0,20"
                       FontSize="16"
-                      SelectionChanged="ChatItemSelected"
-                />
+                      SelectionChanged="ChatItemSelected"/>
 
         </Grid>
 
@@ -100,24 +100,34 @@
 
             <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Visible">
                 <StackPanel x:Name="ParentStack" 
-                        Margin="10,70,10,10"
+                            Margin="10,70,10,10"
                             Background="AliceBlue"/>
             </ScrollViewer>
-            <StackPanel x:Name="ImgStack"
-                        Margin="20,70,60,10">
-                <Frame x:Name="frame" NavigationUIVisibility="Hidden">
-                </Frame>
+            
+            <StackPanel x:Name="ImgStack" Margin="20,70,60,10">
+                <Frame x:Name="frame" NavigationUIVisibility="Hidden"/>
             </StackPanel>
 
             <StackPanel HorizontalAlignment="Right"
                         Orientation="Horizontal">
 
-                <Button x:Name="Browse_button" Content="Browse"
-                    Height="50" Width="100"
-                    HorizontalAlignment="Right"
-                    VerticalAlignment="Top"
-                    Margin="10,10,30,0"
-                    Click="Browse_button_Click" Grid.Column="1"/>
+                <!--<Button x:Name="Browse_button" 
+                        Content="Browse"
+                        Height="50" Width="92"
+                        VerticalAlignment="Top"
+                        Margin="100,10,30,0"
+                        Click="Browse_button_Click" 
+                        Grid.Column="1"/>-->
+
+                <Button x:Name="SettingButton"
+                        Height="40" Width="70"
+                        VerticalAlignment="Top"
+                        Margin="10,10,30,10"
+                        Click="SettingButton_Click">
+              
+                        <materialDesign:PackIcon Kind="Settings"/>
+                </Button>
+               
             </StackPanel>
         </Grid>
     </Grid>

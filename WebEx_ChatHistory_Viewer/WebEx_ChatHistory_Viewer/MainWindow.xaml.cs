@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using ChatHistory.Viewer;
 using Service.Library;
 using Button = System.Windows.Controls.Button;
 using Path = System.IO.Path;
@@ -20,8 +21,10 @@ namespace WebEx_ChatHistory_Viewer
     public partial class MainWindow : Window
     {
         static Services _services = new Services(new JsonDataSource());
+        
+        public string BasePath { get; set; }
 
-        private string BasePath { get; set; }
+        object selectChat;
         public MainWindow()
         {
             InitializeComponent();
@@ -75,29 +78,7 @@ namespace WebEx_ChatHistory_Viewer
         /// <param name="e"></param>
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
-            WinForms.Application.Current.MainWindow.Close();
-        }
-
-        /// <summary>
-        /// click on browse button and folder dialog will open
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Browse_button_Click(object sender, RoutedEventArgs e)
-        {
-            FolderBrowserDialog folderBrowser = new FolderBrowserDialog();
-            if (folderBrowser.ShowDialog() == WinForms.Forms.DialogResult.OK)
-            {
-                myFolders.Items.Clear();
-                BasePath = folderBrowser.SelectedPath;
-
-                string[] dirs = _services.ReadUserName(BasePath);
-                
-                foreach (string dir in dirs)
-                {
-                    myFolders.Items.Add(Path.GetFileName(dir));
-                }
-            }
+            WinForms.Application.Current.Shutdown();
         }
 
         /// <summary>
@@ -122,8 +103,8 @@ namespace WebEx_ChatHistory_Viewer
         {
             ParentStack.Children.Clear();
             string data = "";
-            object selectChat = myFolders.SelectedItem;
-
+            selectChat = myFolders.SelectedItem;
+            
             StackPanel stackPanel = new StackPanel();
 
             if (selectChat != null)
@@ -316,19 +297,14 @@ namespace WebEx_ChatHistory_Viewer
 
         private List<string> GetImagesPath(string folderName)
         {
-
-            DirectoryInfo Folder;
-            FileInfo[] Images;
-
-            Folder = new DirectoryInfo(folderName);
-            Images = Folder.GetFiles();
+            DirectoryInfo Folder = new DirectoryInfo(folderName);
+            FileInfo[] Images = Folder.GetFiles();
             List<string> imagesList = new List<string>();
 
             for (int i = 0; i < Images.Length; i++)
             {
                 imagesList.Add(string.Format(@"{0}/{1}", folderName, Images[i].Name));
             }
-
 
             return imagesList;
         }
@@ -341,6 +317,15 @@ namespace WebEx_ChatHistory_Viewer
 
             return imagePath;
         }
+
+        private void SettingButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+            LoginWindow loginWindow = new LoginWindow();
+            loginWindow.Show();
+            //this.Close();
+            WinForms.Application.Current.MainWindow.Close();
+        }
     }
 }
-
+ 
