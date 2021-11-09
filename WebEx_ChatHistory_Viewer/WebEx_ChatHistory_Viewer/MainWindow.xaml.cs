@@ -106,7 +106,7 @@ namespace WebEx_ChatHistory_Viewer
             selectChat = myFolders.SelectedItem;
             
             StackPanel stackPanel = new StackPanel();
-
+            stackPanel.Margin = new Thickness(300,0,300,0);
             if (selectChat != null)
             {
                 string filename = Path.Join(BasePath, selectChat.ToString(), "messages.json");
@@ -147,6 +147,7 @@ namespace WebEx_ChatHistory_Viewer
                                     Button button = new Button();
                                     button.Content = image;
                                     button.Background = Brushes.Transparent;
+                                    button.Height = 200;
                                     stackPanel1.Children.Add(button);
 
                                     button.Click += ZoomImage_Click;
@@ -192,6 +193,7 @@ namespace WebEx_ChatHistory_Viewer
                                     Button button = new Button();
                                     button.Content = image;
                                     button.Background = Brushes.Transparent;
+                                    button.Height = 200;
                                     stackPanel2.Children.Add(button);
 
                                     button.Click += ZoomImage_Click;
@@ -320,10 +322,9 @@ namespace WebEx_ChatHistory_Viewer
 
         private void SettingButton_Click(object sender, RoutedEventArgs e)
         {
-            
+            this.Hide();
             LoginWindow loginWindow = new LoginWindow();
             loginWindow.Show();
-            //this.Close();
             WinForms.Application.Current.MainWindow.Close();
         }
     }
