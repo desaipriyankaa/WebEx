@@ -69,22 +69,16 @@ namespace ChatHistory.Viewer
             FolderBrowserDialog folderBrowser = new FolderBrowserDialog();
             if (folderBrowser.ShowDialog() == WinForms.Forms.DialogResult.OK)
             {
+               
                 _mainWindow.myFolders.Items.Clear();
                 _mainWindow.BasePath = folderBrowser.SelectedPath;
                 BrowseText.Text = _mainWindow.BasePath;
                 BrowseFullPath = BrowseText.Text;
-
-                string[] dirs = _services.ReadUserName(BrowseFullPath);
-
-                foreach (string dir in dirs)
-                {
-                    _mainWindow.myFolders.Margin = new Thickness(10);
-                    _mainWindow.myFolders.Items.Add(Path.GetFileName(dir));
-                }
+                _mainWindow.DisplayData();
+             
                 _loginCredential.BrowsePath = BrowseFullPath;
             }
         }
-
 
         private void inputEmail_LostFocus(object sender, RoutedEventArgs e)
         {

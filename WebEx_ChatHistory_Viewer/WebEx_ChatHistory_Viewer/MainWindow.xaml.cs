@@ -24,12 +24,25 @@ namespace WebEx_ChatHistory_Viewer
         JsonDataSource _dataSource = new JsonDataSource();
 
         public string BasePath { get; set; }
-
         object selectChat;
+
         public MainWindow()
         {
             InitializeComponent();
             _loginCredential.ReadData();
+            DisplayData();
+        }
+
+        public void DisplayData()
+        {
+            myFolders.Items.Clear();
+            string[] dirs = _services.ReadUserName(_loginCredential.BrowsePath);
+
+            foreach (string dir in dirs)
+            {
+                myFolders.Margin = new Thickness(10);
+                myFolders.Items.Add(Path.GetFileName(dir));
+            }
         }
 
         /// <summary>
@@ -91,21 +104,6 @@ namespace WebEx_ChatHistory_Viewer
 
         private void ChatItemSelected(object sender, SelectionChangedEventArgs e)
         {
-            //string inEmail = _dataSource.SplitEmail(_loginCredential.EmailID);
-            //do
-            //{
-            //    if (inEmail == "Sanket.Naik")
-            //    {
-            //        var ChildStack = CreateNewStackPanelDynamically();
-            //        ParentStack.Children.Add(ChildStack);
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Invalid Email...");
-            //    }
-            //}
-            //while (inEmail != "Sanket.Naik");
-
             var ChildStack = CreateNewStackPanelDynamically();
             ParentStack.Children.Add(ChildStack);
         }
@@ -119,19 +117,18 @@ namespace WebEx_ChatHistory_Viewer
         private StackPanel CreateNewStackPanelDynamically()
         {
             ParentStack.Children.Clear();
-            
+
             string data = "";
             selectChat = myFolders.SelectedItem;
-            
+
             StackPanel stackPanel = new StackPanel();
-            stackPanel.Margin = new Thickness(200,0,200,0);
+            stackPanel.Margin = new Thickness(200, 0, 200, 0);
 
             if (selectChat != null)
             {
-                string filename = Path.Join(BasePath, selectChat.ToString(), "messages.json");
+                string filename = Path.Join(_loginCredential.BrowsePath, selectChat.ToString(), "messages.json");
                 List<Messages> msg = _services.ReadUserChatData(filename);
-                List<string> localImagesPath = GetImagesPath(Path.Join(BasePath, selectChat.ToString()));
-                //string inEmail = _dataSource.SplitEmail(_loginCredential.EmailID);
+                List<string> localImagesPath = GetImagesPath(Path.Join(_loginCredential.BrowsePath, selectChat.ToString()));
 
                 foreach (var item in msg)
                 {
@@ -304,7 +301,7 @@ namespace WebEx_ChatHistory_Viewer
             return image;
         }
 
-        
+
         private static TextBlock GetTextBlock(string text, WinForms.HorizontalAlignment horizontalAlignment)
         {
             TextBlock textBlock = new TextBlock();
@@ -353,4 +350,4 @@ namespace WebEx_ChatHistory_Viewer
         }
     }
 }
- 
+

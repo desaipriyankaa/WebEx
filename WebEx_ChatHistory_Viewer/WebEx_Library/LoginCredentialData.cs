@@ -9,7 +9,7 @@ namespace Service.Library
     public class LoginCredentialData
     {
         static string _loginCredentialDataFilePath = @"D:\WPF Trial\WebExChatHistoryViewerTrial2\WebExChatHistoryViewer\WebEx_ChatHistory_Viewer\WebEx_Library\LoginCredentialDataFile.txt";
-
+        
         public string EmailID { get; set; }
         public string BrowsePath { get; set; }
 
