@@ -37,6 +37,8 @@ namespace Service.Library
                     read.Trim();
                     EmailID = data[0];
                     BrowsePath = data[1];
+                    read = reader.ReadLine();
+
                 }
                 reader.Close();
             }

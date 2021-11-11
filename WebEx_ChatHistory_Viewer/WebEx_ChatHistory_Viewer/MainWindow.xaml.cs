@@ -20,8 +20,8 @@ namespace WebEx_ChatHistory_Viewer
     public partial class MainWindow : Window
     {
         static Services _services = new Services(new JsonDataSource());
-        LoginCredentialData loginCredential = new LoginCredentialData();
-        //LoginWindow loginWindow = new LoginWindow();
+        LoginCredentialData _loginCredential = new LoginCredentialData();
+        JsonDataSource _dataSource = new JsonDataSource();
 
         public string BasePath { get; set; }
 
@@ -29,8 +29,7 @@ namespace WebEx_ChatHistory_Viewer
         public MainWindow()
         {
             InitializeComponent();
-            //loginCredential.ReadData();
-            //loginWindow.th = loginCredential.BrowsePath;
+            _loginCredential.ReadData();
         }
 
         /// <summary>
@@ -92,6 +91,21 @@ namespace WebEx_ChatHistory_Viewer
 
         private void ChatItemSelected(object sender, SelectionChangedEventArgs e)
         {
+            //string inEmail = _dataSource.SplitEmail(_loginCredential.EmailID);
+            //do
+            //{
+            //    if (inEmail == "Sanket.Naik")
+            //    {
+            //        var ChildStack = CreateNewStackPanelDynamically();
+            //        ParentStack.Children.Add(ChildStack);
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Invalid Email...");
+            //    }
+            //}
+            //while (inEmail != "Sanket.Naik");
+
             var ChildStack = CreateNewStackPanelDynamically();
             ParentStack.Children.Add(ChildStack);
         }
@@ -117,6 +131,7 @@ namespace WebEx_ChatHistory_Viewer
                 string filename = Path.Join(BasePath, selectChat.ToString(), "messages.json");
                 List<Messages> msg = _services.ReadUserChatData(filename);
                 List<string> localImagesPath = GetImagesPath(Path.Join(BasePath, selectChat.ToString()));
+                //string inEmail = _dataSource.SplitEmail(_loginCredential.EmailID);
 
                 foreach (var item in msg)
                 {
@@ -135,7 +150,7 @@ namespace WebEx_ChatHistory_Viewer
                             data = item.PersonEmail + "     " + item.Created + " \n ";
                         }
 
-                        TextBlock textBlock = GetTextBlock(data, WinForms.HorizontalAlignment.Left);
+                        TextBlock textBlock = GetTextBlock(data, HorizontalAlignment.Left);
                         stackPanel1.Children.Add(textBlock);
 
                         //Check for Image is present or not

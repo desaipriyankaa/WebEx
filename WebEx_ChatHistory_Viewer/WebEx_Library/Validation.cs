@@ -9,7 +9,7 @@ namespace Service.Library
     {
         public bool isValidEmail(string inputEmail)
         {
-            string pattern = @"^[a-zA-Z0-9]{3,20}@[A-Za-z]{3,10}.(com|co.in|co.us)$";
+            string pattern = @"^[a-zA-Z0-9]{3,20}.[a-zA-Z0-9]{3,20}@(klingelnberg).(com)$";
             Regex regex = new Regex(pattern);
             bool IsValid = false;
 

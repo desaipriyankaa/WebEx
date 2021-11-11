@@ -20,7 +20,7 @@ namespace ChatHistory.Viewer
         MainWindow _mainWindow = new MainWindow();
         LoginCredentialData _loginCredential = new LoginCredentialData();
 
-        public string th { get; set; }
+        public string BrowseFullPath { get; set; }
 
         public LoginWindow()
         {
@@ -34,17 +34,33 @@ namespace ChatHistory.Viewer
                 DragMove();
             }
         }
+
+        private void LoginClose_Click(object sender, RoutedEventArgs e)
+        {
+            WinForms.Application.Current.Shutdown();
+        }
+
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            if (inputEmail.Text.Length == 0 || BrowseText.Text.Length == 0)
-            {
-                MessageBox.Show("Enter correct Credentials ...!!! ");
-            }
-            else
+            //if (inputEmail.Text.Length == 0 || BrowseText.Text.Length == 0)
+            //{
+            //    MessageBox.Show("Enter correct Credentials ...!!! ");
+            //}
+            //else
+            //{
+            //    _loginCredential.SaveData();
+            //    _mainWindow.Show();
+            //    this.Hide();
+            //}
+            if (inputEmail.Text == "Sanket.Naik@klingelnberg.com")
             {
                 _loginCredential.SaveData();
                 _mainWindow.Show();
                 this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Enter correct Credentials ...!!! ");
             }
         }
 
@@ -56,25 +72,25 @@ namespace ChatHistory.Viewer
                 _mainWindow.myFolders.Items.Clear();
                 _mainWindow.BasePath = folderBrowser.SelectedPath;
                 BrowseText.Text = _mainWindow.BasePath;
-                th = BrowseText.Text;
+                BrowseFullPath = BrowseText.Text;
 
-                string[] dirs = _services.ReadUserName(th);
+                string[] dirs = _services.ReadUserName(BrowseFullPath);
 
                 foreach (string dir in dirs)
                 {
                     _mainWindow.myFolders.Margin = new Thickness(10);
                     _mainWindow.myFolders.Items.Add(Path.GetFileName(dir));
                 }
-                _loginCredential.BrowsePath = BrowseText.Text;
+                _loginCredential.BrowsePath = BrowseFullPath;
             }
         }
 
-        
+
         private void inputEmail_LostFocus(object sender, RoutedEventArgs e)
         {
-            bool a = _validation.isValidEmail(inputEmail.Text.ToString());
+            bool CheckValid = _validation.isValidEmail(inputEmail.Text.ToString());
 
-            if (a)
+            if (CheckValid)
             {
                 lblError.Foreground = Brushes.SkyBlue;
                 lblError.Content = "Correct Email";
@@ -91,6 +107,5 @@ namespace ChatHistory.Viewer
             }
         }
 
- 
     }
 }

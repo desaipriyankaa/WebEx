@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+    </ApplicationDefinition>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="4.2.1" />
   </ItemGroup>
 
