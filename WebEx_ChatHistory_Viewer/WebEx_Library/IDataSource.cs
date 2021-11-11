@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Service.Library
 {
@@ -10,7 +7,7 @@ namespace Service.Library
         public List<Messages> ReadMessage(string path);
 
         public string[] ReadUsers(string path);
-        
+
     }
 
 

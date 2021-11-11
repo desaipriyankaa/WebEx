@@ -1,13 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using ChatHistory.Viewer;
+using Service.Library;
+using System.Collections.Generic;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using ChatHistory.Viewer;
-using Service.Library;
 using Button = System.Windows.Controls.Button;
 using Path = System.IO.Path;
 using TextBlock = System.Windows.Controls.TextBox;
@@ -21,13 +20,17 @@ namespace WebEx_ChatHistory_Viewer
     public partial class MainWindow : Window
     {
         static Services _services = new Services(new JsonDataSource());
-        
+        LoginCredentialData loginCredential = new LoginCredentialData();
+        //LoginWindow loginWindow = new LoginWindow();
+
         public string BasePath { get; set; }
 
         object selectChat;
         public MainWindow()
         {
             InitializeComponent();
+            //loginCredential.ReadData();
+            //loginWindow.th = loginCredential.BrowsePath;
         }
 
         /// <summary>
@@ -102,11 +105,13 @@ namespace WebEx_ChatHistory_Viewer
         private StackPanel CreateNewStackPanelDynamically()
         {
             ParentStack.Children.Clear();
+            
             string data = "";
             selectChat = myFolders.SelectedItem;
             
             StackPanel stackPanel = new StackPanel();
-            stackPanel.Margin = new Thickness(300,0,300,0);
+            stackPanel.Margin = new Thickness(200,0,200,0);
+
             if (selectChat != null)
             {
                 string filename = Path.Join(BasePath, selectChat.ToString(), "messages.json");
@@ -118,7 +123,7 @@ namespace WebEx_ChatHistory_Viewer
                     //For Others chat
                     if (item.PersonEmail != "Sanket.Naik")
                     {
-                        StackPanel stackPanel1 = GetStackPanel(Brushes.Lavender, WinForms.HorizontalAlignment.Left);
+                        StackPanel stackPanel1 = GetStackPanel(Brushes.LightCyan, WinForms.HorizontalAlignment.Left);
 
                         // Check for Text is present or not
                         if (item.Text != null)
@@ -165,7 +170,7 @@ namespace WebEx_ChatHistory_Viewer
                     //for "Sanket.Naik"
                     if (item.PersonEmail == "Sanket.Naik")
                     {
-                        StackPanel stackPanel2 = GetStackPanel(Brushes.LightGreen, WinForms.HorizontalAlignment.Right);
+                        StackPanel stackPanel2 = GetStackPanel(Brushes.LightBlue, WinForms.HorizontalAlignment.Right);
 
                         // Check for Text is present or not
                         if (item.Text != null)
@@ -223,12 +228,13 @@ namespace WebEx_ChatHistory_Viewer
             bitmapImage.UriSource = new System.Uri(p.ToString());
             bitmapImage.EndInit();
             Image image = new Image();
-            image.Height = 800;
-            image.Width = 1000;
+            image.Height = 500;
+            image.Width = 800;
             image.Source = bitmapImage;
             StackPanel btnStack = CloseButtonStack();
 
             StackPanel stackPanel = new StackPanel();
+            stackPanel.Width = 1200;
             stackPanel.Background = Brushes.LightGray;
             stackPanel.Orientation = WinForms.Controls.Orientation.Vertical;
 
@@ -244,11 +250,13 @@ namespace WebEx_ChatHistory_Viewer
             btnStack.Orientation = WinForms.Controls.Orientation.Horizontal;
             Button button = new Button();
             button.HorizontalAlignment = WinForms.HorizontalAlignment.Right;
-            button.Content = "Close";
+            button.Content = new MaterialDesignThemes.Wpf.PackIcon { Kind = MaterialDesignThemes.Wpf.PackIconKind.Close };
+
+
             button.FontSize = 20;
-            button.Width = 100;
+            button.Width = 50;
             button.Height = 50;
-            button.Margin = new Thickness(1500, 10, 10, 10);
+            button.Margin = new Thickness(1050, 10, 10, 10);
             button.Click += BackButton_Click;
             btnStack.Children.Add(button);
             return btnStack;
@@ -285,6 +293,7 @@ namespace WebEx_ChatHistory_Viewer
         private static TextBlock GetTextBlock(string text, WinForms.HorizontalAlignment horizontalAlignment)
         {
             TextBlock textBlock = new TextBlock();
+            textBlock.FontSize = 16;
             textBlock.Background = Brushes.Transparent;
             textBlock.Width = 400;
             textBlock.Padding = new Thickness(10, 5, 10, 0);
