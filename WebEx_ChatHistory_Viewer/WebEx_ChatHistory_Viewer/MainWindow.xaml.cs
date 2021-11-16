@@ -35,13 +35,26 @@ namespace WebEx_ChatHistory_Viewer
 
         public void DisplayData()
         {
-            myFolders.Items.Clear();
-            string[] dirs = _services.ReadUserName(_loginCredential.BrowsePath);
-
-            foreach (string dir in dirs)
+            _loginCredential.ReadData();
+            if (_loginCredential.BrowsePath != null)
             {
-                myFolders.Margin = new Thickness(10);
-                myFolders.Items.Add(Path.GetFileName(dir));
+                myFolders.Items.Clear();
+                string[] dirs = _services.ReadUserName(_loginCredential.BrowsePath);
+
+                foreach (string dir in dirs)
+                {
+                    myFolders.Margin = new Thickness(10);
+                    string[] folder = Directory.GetDirectories(dir);
+                    foreach (var item1 in folder)
+                    {
+                        myFolders.Items.Add(Path.GetFileName(item1));
+                    }
+                }
+            }
+            else
+            {
+                this.Show();
+                MessageBox.Show("Configuration required.. Please Click setting button..!!");
             }
         }
 
@@ -343,7 +356,7 @@ namespace WebEx_ChatHistory_Viewer
 
         private void SettingButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            // this.Hide();
             LoginWindow loginWindow = new LoginWindow();
             loginWindow.Show();
             WinForms.Application.Current.MainWindow.Close();

@@ -42,20 +42,10 @@ namespace ChatHistory.Viewer
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            //if (inputEmail.Text.Length == 0 || BrowseText.Text.Length == 0)
-            //{
-            //    MessageBox.Show("Enter correct Credentials ...!!! ");
-            //}
-            //else
-            //{
-            //    _loginCredential.SaveData();
-            //    _mainWindow.Show();
-            //    this.Hide();
-            //}
             if (inputEmail.Text == "Sanket.Naik@klingelnberg.com")
             {
                 _loginCredential.SaveData();
-                _mainWindow.Show();
+                _mainWindow.DisplayData();
                 this.Hide();
             }
             else
@@ -69,12 +59,10 @@ namespace ChatHistory.Viewer
             FolderBrowserDialog folderBrowser = new FolderBrowserDialog();
             if (folderBrowser.ShowDialog() == WinForms.Forms.DialogResult.OK)
             {
-               
                 _mainWindow.myFolders.Items.Clear();
                 _mainWindow.BasePath = folderBrowser.SelectedPath;
                 BrowseText.Text = _mainWindow.BasePath;
                 BrowseFullPath = BrowseText.Text;
-                _mainWindow.DisplayData();
              
                 _loginCredential.BrowsePath = BrowseFullPath;
             }
