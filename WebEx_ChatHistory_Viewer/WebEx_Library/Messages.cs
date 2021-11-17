@@ -9,6 +9,5 @@ namespace Service.Library
         public DateTime Created { get; set; }
         public string Text { get; set; }
         public List<string> Files { get; set; }
-        public string RoomType { get; set; }
     }
 }

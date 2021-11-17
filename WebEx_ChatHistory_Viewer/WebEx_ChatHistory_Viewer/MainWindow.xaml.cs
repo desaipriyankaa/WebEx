@@ -22,7 +22,7 @@ namespace WebEx_ChatHistory_Viewer
         static Services _services = new Services(new JsonDataSource());
         LoginCredentialData _loginCredential = new LoginCredentialData();
         JsonDataSource _dataSource = new JsonDataSource();
-        
+
 
         public string BasePath { get; set; }
         object selectChat;
@@ -70,6 +70,7 @@ namespace WebEx_ChatHistory_Viewer
         /// <param name="e"></param>
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
         {
+            //WindowState = x.Border_MouseDown(sender, e);
             if (e.LeftButton == MouseButtonState.Pressed)
             {
                 DragMove();
@@ -135,13 +136,10 @@ namespace WebEx_ChatHistory_Viewer
         private StackPanel CreateNewStackPanelDynamically()
         {
             ParentStack.Children.Clear();
-
             string data = "";
             selectChat = myFolders.SelectedItem;
-
             StackPanel stackPanel = new StackPanel();
             stackPanel.Margin = new Thickness(200, 0, 200, 0);
-
 
             if (selectChat != null)
             {
@@ -154,103 +152,61 @@ namespace WebEx_ChatHistory_Viewer
                 foreach (var item in msg)
                 {
                     JsonDataSource jsonData = new JsonDataSource();
-                    string inputemail = _loginCredential.EmailID;
-                    string splitEmail = jsonData.SplitEmail(inputemail);
+                    string loginUserEmail = jsonData.SplitEmail(_loginCredential.EmailID);
 
-                    //For Others chat
-                    if (item.PersonEmail != splitEmail)
+                    if (item.PersonEmail != loginUserEmail)  //For Others chat
                     {
                         StackPanel stackPanel1 = GetStackPanel(Brushes.LightCyan, WinForms.HorizontalAlignment.Left);
-
-                        // Check for Text is present or not
-                        if (item.Text != null)
-                        {
-                            data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
-                        }
-                        else if (item.Text == null)
-                        {
-                            data = item.PersonEmail + "     " + item.Created + " \n ";
-                        }
-
-                        TextBlock textBlock = GetTextBlock(data, HorizontalAlignment.Left);
-                        stackPanel1.Children.Add(textBlock);
-
-                        //Check for Image is present or not
-                        if (item.Files != null)
-                        {
-                            foreach (string item1 in item.Files)
-                            {
-                                string imgNameFromJSON = SplitFilesToFindImageName(item1);
-                                List<string> imageFullName = localImagesPath.FindAll(i => i.Contains(imgNameFromJSON));
-                                foreach (var singleImageName in imageFullName)
-                                {
-                                    //Add Image
-                                    Image image = GetImage(singleImageName);
-                                    Button button = new Button();
-                                    button.Content = image;
-                                    button.Background = Brushes.Transparent;
-                                    button.Height = 200;
-                                    stackPanel1.Children.Add(button);
-
-                                    button.Click += ZoomImage_Click;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
-                        }
-                        stackPanel.Children.Add(stackPanel1);
+                        data = AddingDataToStackPanel(data, stackPanel, localImagesPath, item, stackPanel1);
                     }
-
-
-                    //for "Sanket.Naik"
-                    if (item.PersonEmail == splitEmail)
+                    else  //for "SuccessfullLoggedUser"
                     {
                         StackPanel stackPanel2 = GetStackPanel(Brushes.LightBlue, WinForms.HorizontalAlignment.Right);
-
-                        // Check for Text is present or not
-                        if (item.Text != null)
-                        {
-                            data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
-                        }
-                        if (item.Text == null)
-                        {
-                            data = item.PersonEmail + "     " + item.Created + " \n ";
-                        }
-
-                        TextBlock textBlock = GetTextBlock(data, WinForms.HorizontalAlignment.Right);
-                        stackPanel2.Children.Add(textBlock);
-
-                        //Check for Image is present or not
-                        if (item.Files != null)
-                        {
-                            foreach (string item1 in item.Files)
-                            {
-                                string imgNameFromJSON = SplitFilesToFindImageName(item1);
-                                List<string> imageFullName = localImagesPath.FindAll(i => i.Contains(imgNameFromJSON));
-                                foreach (string singleImageName in imageFullName)
-                                {
-                                    Image image = GetImage(singleImageName);
-                                    Button button = new Button();
-                                    button.Content = image;
-                                    button.Background = Brushes.Transparent;
-                                    button.Height = 200;
-                                    stackPanel2.Children.Add(button);
-
-                                    button.Click += ZoomImage_Click;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
-                        }
-                        stackPanel.Children.Add(stackPanel2);
+                        data = AddingDataToStackPanel(data, stackPanel, localImagesPath, item, stackPanel2);
                     }
                 }
             }
             return stackPanel;
+        }
+
+        private string AddingDataToStackPanel(string data, StackPanel stackPanel, List<string> localImagesPath, Messages item, StackPanel stack)
+        {
+            if (item.Text != null)
+            {
+                data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
+            }
+            else
+            {
+                data = item.PersonEmail + "     " + item.Created + " \n ";
+            }
+
+            TextBlock textBlock = GetTextBlock(data, HorizontalAlignment.Left);
+            stack.Children.Add(textBlock);
+
+            if (item.Files != null)  //Check for Image is present or not
+            {
+                foreach (string item1 in item.Files)
+                {
+                    string imgNameFromJSON = SplitFilesToFindImageName(item1);
+                    List<string> imageFullName = localImagesPath.FindAll(i => i.Contains(imgNameFromJSON));
+                    foreach (var singleImageName in imageFullName) //Add Image
+                    {
+                        Image image = GetImage(singleImageName);
+                        Button button = new Button();
+                        button.Content = image;
+                        button.Background = Brushes.Transparent;
+                        button.Height = 200;
+                        stack.Children.Add(button);
+                        button.Click += ZoomImage_Click;
+                    }
+                }
+            }
+            else
+            {
+                data = item.PersonEmail + "     " + item.Created + " \n\n " + item.Text + " \n ";
+            }
+            stackPanel.Children.Add(stack);
+            return data;
         }
 
         private void ZoomImage_Click(object sender, RoutedEventArgs e)
@@ -268,7 +224,7 @@ namespace WebEx_ChatHistory_Viewer
             image.Height = 500;
             image.Width = 800;
             image.Source = bitmapImage;
-            StackPanel btnStack = CloseButtonStack();
+            StackPanel btnStack = CreateZoomImage();
 
             StackPanel stackPanel = new StackPanel();
             stackPanel.Width = 1200;
@@ -281,7 +237,7 @@ namespace WebEx_ChatHistory_Viewer
 
         }
 
-        private StackPanel CloseButtonStack()
+        private StackPanel CreateZoomImage()
         {
             StackPanel btnStack = new StackPanel();
             btnStack.Orientation = WinForms.Controls.Orientation.Horizontal;
@@ -294,12 +250,12 @@ namespace WebEx_ChatHistory_Viewer
             button.Width = 50;
             button.Height = 50;
             button.Margin = new Thickness(1050, 10, 10, 10);
-            button.Click += BackButton_Click;
+            button.Click += ZoomImageCloseButton_Click;
             btnStack.Children.Add(button);
             return btnStack;
         }
 
-        private void BackButton_Click(object sender, RoutedEventArgs e)
+        private void ZoomImageCloseButton_Click(object sender, RoutedEventArgs e)
         {
             ImgStack.Visibility = Visibility.Hidden;
         }
@@ -370,7 +326,6 @@ namespace WebEx_ChatHistory_Viewer
         {
             ConfigurationWindow loginWindow = new ConfigurationWindow();
             loginWindow.Show();
-            WinForms.Application.Current.MainWindow.Close();
         }
     }
 }

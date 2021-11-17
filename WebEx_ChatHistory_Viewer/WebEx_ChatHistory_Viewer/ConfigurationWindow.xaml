@@ -65,7 +65,7 @@
                          TextWrapping="Wrap"
                          x:Name="inputEmail"
                          FontSize="14"
-                         LostFocus="inputEmail_LostFocus"/>
+                         LostFocus="InputEmail_LostFocus"/>
 
                 <Label x:Name="lblError" 
                         HorizontalAlignment="Left" 
@@ -78,7 +78,8 @@
                          FontFamily="Champagne &amp; Limousines" 
                          FontSize="14"
                          TextWrapping="Wrap"
-                         x:Name="BrowseText"/>
+                         x:Name="BrowseText"
+                         LostFocus="BrowseText_LostFocus"/>
             </StackPanel>
         </Grid>
 

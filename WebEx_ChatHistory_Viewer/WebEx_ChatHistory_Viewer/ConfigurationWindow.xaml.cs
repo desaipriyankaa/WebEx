@@ -3,7 +3,6 @@ using System.Windows.Input;
 using WebEx_ChatHistory_Viewer;
 using System.Windows.Forms;
 using Service.Library;
-using Path = System.IO.Path;
 using WinForms = System.Windows;
 using MessageBox = System.Windows.MessageBox;
 using System.Windows.Media;
@@ -25,6 +24,13 @@ namespace ChatHistory.Viewer
         public ConfigurationWindow()
         {
             InitializeComponent();
+
+            _loginCredential.ReadData();
+            if (_loginCredential.EmailID != null)
+            {
+                inputEmail.Text = _loginCredential.EmailID;
+                BrowseText.Text = _loginCredential.BrowsePath;
+            }
         }
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
@@ -37,7 +43,7 @@ namespace ChatHistory.Viewer
 
         private void LoginClose_Click(object sender, RoutedEventArgs e)
         {
-            WinForms.Application.Current.Shutdown();
+            this.Hide();
         }
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
@@ -51,7 +57,6 @@ namespace ChatHistory.Viewer
                 };
                 main.myFolders.Items.Clear();
                 main.DisplayData();
-                main.Show();
                 this.Hide();
             }
             else
@@ -72,7 +77,7 @@ namespace ChatHistory.Viewer
             }
         }
 
-        private void inputEmail_LostFocus(object sender, RoutedEventArgs e)
+        private void InputEmail_LostFocus(object sender, RoutedEventArgs e)
         {
             bool CheckValid = _validation.isValidEmail(inputEmail.Text.ToString());
 
@@ -91,6 +96,13 @@ namespace ChatHistory.Viewer
                 lblError.Content = "**Email is mandatory ..!";
                 inputEmail.Text = string.Empty;
             }
+
+            
+        }
+
+        private void BrowseText_LostFocus(object sender, RoutedEventArgs e)
+        {
+            _loginCredential.BrowsePath = BrowseText.Text;
         }
     }
 }
