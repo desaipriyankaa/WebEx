@@ -1,0 +1,26 @@
+[
+  {
+    "text": "so that partNo",
+    "personEmail": "Sanket.Naik@klingelnberg.com",
+    "roomType": "team",
+    "created": "2021-03-25T11:42:52.360Z"
+  },
+  {
+    "text": "partNo is 101",
+    "personEmail": "sagar.shende@klingelnberg.com",
+    "roomType": "team",
+    "created": "2021-03-25T11:42:52.360Z"
+  },
+  {
+    "text": "Hello,Good morning",
+    "personEmail": "priyanka.desai@klingelnberg.com",
+    "roomType": "team",
+    "created": "2021-03-25T11:42:52.360Z"
+  },
+  {
+    "created": "2021-03-25T11:42:52.360Z",
+    "personEmail": "Sanket.Naik@klingelnberg.com",
+    "roomType": "team",
+    "text": "good morning sagar and priyanka.."
+  }
+]

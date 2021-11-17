@@ -22,6 +22,7 @@ namespace WebEx_ChatHistory_Viewer
         static Services _services = new Services(new JsonDataSource());
         LoginCredentialData _loginCredential = new LoginCredentialData();
         JsonDataSource _dataSource = new JsonDataSource();
+        
 
         public string BasePath { get; set; }
         object selectChat;
@@ -33,6 +34,9 @@ namespace WebEx_ChatHistory_Viewer
             DisplayData();
         }
 
+        /// <summary>
+        /// if BrowsePath exists then displays all data in myFolders(ListView) 
+        /// </summary>
         public void DisplayData()
         {
             _loginCredential.ReadData();
@@ -53,8 +57,9 @@ namespace WebEx_ChatHistory_Viewer
             }
             else
             {
-                this.Show();
-                MessageBox.Show("Configuration required.. Please Click setting button..!!");
+                this.Hide();
+                ConfigurationWindow window = new ConfigurationWindow();
+                window.Show();
             }
         }
 
@@ -137,16 +142,23 @@ namespace WebEx_ChatHistory_Viewer
             StackPanel stackPanel = new StackPanel();
             stackPanel.Margin = new Thickness(200, 0, 200, 0);
 
+
             if (selectChat != null)
             {
-                string filename = Path.Join(_loginCredential.BrowsePath, selectChat.ToString(), "messages.json");
+                string[] dirs = _services.ReadUserName(_loginCredential.BrowsePath);
+                int dirNumber = selectChat.ToString().Contains(',') ? 1 : 0;
+                string filename = Path.Join(dirs[dirNumber], selectChat.ToString(), "messages.json");
                 List<Messages> msg = _services.ReadUserChatData(filename);
-                List<string> localImagesPath = GetImagesPath(Path.Join(_loginCredential.BrowsePath, selectChat.ToString()));
+                List<string> localImagesPath = GetImagesPath(Path.Join(dirs[dirNumber], selectChat.ToString()));
 
                 foreach (var item in msg)
                 {
+                    JsonDataSource jsonData = new JsonDataSource();
+                    string inputemail = _loginCredential.EmailID;
+                    string splitEmail = jsonData.SplitEmail(inputemail);
+
                     //For Others chat
-                    if (item.PersonEmail != "Sanket.Naik")
+                    if (item.PersonEmail != splitEmail)
                     {
                         StackPanel stackPanel1 = GetStackPanel(Brushes.LightCyan, WinForms.HorizontalAlignment.Left);
 
@@ -193,7 +205,7 @@ namespace WebEx_ChatHistory_Viewer
 
 
                     //for "Sanket.Naik"
-                    if (item.PersonEmail == "Sanket.Naik")
+                    if (item.PersonEmail == splitEmail)
                     {
                         StackPanel stackPanel2 = GetStackPanel(Brushes.LightBlue, WinForms.HorizontalAlignment.Right);
 
@@ -356,8 +368,7 @@ namespace WebEx_ChatHistory_Viewer
 
         private void SettingButton_Click(object sender, RoutedEventArgs e)
         {
-            // this.Hide();
-            LoginWindow loginWindow = new LoginWindow();
+            ConfigurationWindow loginWindow = new ConfigurationWindow();
             loginWindow.Show();
             WinForms.Application.Current.MainWindow.Close();
         }

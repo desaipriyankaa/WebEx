@@ -13,16 +13,16 @@ namespace ChatHistory.Viewer
     /// <summary>
     /// Interaction logic for LoginWindow.xaml
     /// </summary>
-    public partial class LoginWindow : Window
+    public partial class ConfigurationWindow : Window
     {
         static Services _services = new Services(new JsonDataSource());
         Validation _validation = new Validation();
-        MainWindow _mainWindow = new MainWindow();
         LoginCredentialData _loginCredential = new LoginCredentialData();
+        string _mainwindowBasePath;
 
         public string BrowseFullPath { get; set; }
 
-        public LoginWindow()
+        public ConfigurationWindow()
         {
             InitializeComponent();
         }
@@ -42,10 +42,16 @@ namespace ChatHistory.Viewer
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            if (inputEmail.Text == "Sanket.Naik@klingelnberg.com")
+            if (inputEmail.Text == _loginCredential.EmailID)
             {
                 _loginCredential.SaveData();
-                _mainWindow.DisplayData();
+                MainWindow main = new MainWindow()
+                {
+                    BasePath = _mainwindowBasePath
+                };
+                main.myFolders.Items.Clear();
+                main.DisplayData();
+                main.Show();
                 this.Hide();
             }
             else
@@ -59,11 +65,9 @@ namespace ChatHistory.Viewer
             FolderBrowserDialog folderBrowser = new FolderBrowserDialog();
             if (folderBrowser.ShowDialog() == WinForms.Forms.DialogResult.OK)
             {
-                _mainWindow.myFolders.Items.Clear();
-                _mainWindow.BasePath = folderBrowser.SelectedPath;
-                BrowseText.Text = _mainWindow.BasePath;
+                _mainwindowBasePath= folderBrowser.SelectedPath;
+                BrowseText.Text = _mainwindowBasePath;
                 BrowseFullPath = BrowseText.Text;
-             
                 _loginCredential.BrowsePath = BrowseFullPath;
             }
         }
@@ -88,6 +92,5 @@ namespace ChatHistory.Viewer
                 inputEmail.Text = string.Empty;
             }
         }
-
     }
 }

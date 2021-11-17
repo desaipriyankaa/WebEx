@@ -17,12 +17,12 @@ namespace Service.Library
                 StreamReader reader = fileInfo.OpenText();
                 string str = reader.ReadToEnd();
 
-                messages = JsonConvert.DeserializeObject<List<Messages>>(str);                            
+                messages = JsonConvert.DeserializeObject<List<Messages>>(str);
             }
 
             foreach (var item in messages)
             {
-                item.PersonEmail = SplitEmail(item.PersonEmail);  
+                item.PersonEmail = SplitEmail(item.PersonEmail);
             }
             return messages;
 
