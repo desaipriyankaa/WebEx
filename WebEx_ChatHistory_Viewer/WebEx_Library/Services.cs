@@ -14,6 +14,7 @@ namespace Service.Library
         {
            return _dataSource.ReadMessage(path);
         }
+
         public string[] ReadUserName(string path)
         {
             return _dataSource.ReadUsers(path);

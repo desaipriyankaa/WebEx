@@ -4,14 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WebEx_ChatHistory_Viewer"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-         Background=" #A8D8F0"
+        Background=" #A8D8F0"
         WindowStyle="None"
         AllowsTransparency="True"
         ResizeMode="CanResizeWithGrip"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="800" Width="1400">
     <Grid>
-
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition/>
@@ -24,7 +25,7 @@
 
         <!--Title Bar in midnight blue color-->
         <Border Grid.ColumnSpan="2"
-                Background="MidnightBlue"
+                Background="#028C9F"
                 Height="50"
                 MouseDown="Border_MouseDown">
 
@@ -77,7 +78,7 @@
 
             <Label Content="Contacts"
                    VerticalAlignment="Center"
-                   FontSize="16"
+                   FontSize="20"
                    FontWeight="Bold"
                    Foreground="Black"
                    Margin="20,0,0,0"/>
@@ -85,40 +86,51 @@
             <ListView x:Name="myFolders"
                       Background="Transparent"
                       Grid.Row="1"
-                      Margin="20"
+                      Margin="0,20"
                       FontSize="16"
                       SelectionChanged="ChatItemSelected"
-                />
+                      />
 
         </Grid>
 
         <!--Column no 2-->
-        <Grid Grid.Row="1" Grid.Column="2">
+        
+        <Grid Grid.Row="1" Grid.Column="2" Background="#dddddd">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="0*"/>
             </Grid.ColumnDefinitions>
-
+            
+            <StackPanel>
+                <Image Source="C:\Users\desa_pri\Pictures\Saved Pictures\6.JFIF" Margin="10" >
+                    
+                </Image>
+            </StackPanel>
+            
             <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Visible">
                 <StackPanel x:Name="ParentStack" 
-                        Margin="10,70,10,10"
-                            Background="AliceBlue"/>
+                            Margin="10,70,10,10"
+                            Background="Transparent">
+                </StackPanel>
             </ScrollViewer>
-            <StackPanel x:Name="ImgStack"
-                        Margin="20,70,60,10">
-                <Frame x:Name="frame" NavigationUIVisibility="Hidden">
-                </Frame>
+            
+            <StackPanel x:Name="ImgStack" Margin="20,70,60,10">
+                <Frame x:Name="frame" NavigationUIVisibility="Hidden"/>
             </StackPanel>
 
-            <StackPanel HorizontalAlignment="Right"
-                        Orientation="Horizontal">
+            <StackPanel Orientation="Vertical"
+                        VerticalAlignment="Top"
+                        HorizontalAlignment="Right">
 
-                <Button x:Name="Browse_button" Content="Browse"
-                    Height="50" Width="100"
-                    HorizontalAlignment="Right"
-                    VerticalAlignment="Top"
-                    Margin="10,10,30,0"
-                    Click="Browse_button_Click" Grid.Column="1"/>
+                <Button x:Name="SettingButton"
+                        Height="40" Width="70"
+                        VerticalAlignment="Top"
+                        Margin="10,10,30,10"
+                        Click="SettingButton_Click">
+              
+                        <materialDesign:PackIcon Kind="Settings"/>
+                </Button>
+               
             </StackPanel>
         </Grid>
     </Grid>
