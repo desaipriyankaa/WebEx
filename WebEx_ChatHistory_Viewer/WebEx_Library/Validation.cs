@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -15,7 +16,7 @@ namespace Service.Library
 
             if (regex.IsMatch(inputEmail))
             {
-                IsValid = true;
+                  IsValid = true;
                 return IsValid;
             }
             else
@@ -23,6 +24,12 @@ namespace Service.Library
                 IsValid = false;
                 return IsValid;
             }
+        }
+
+        public bool isValidBrowsePath(string browsePath)
+        {
+            bool inputBrowse = browsePath.Contains("WebexDump");
+            return inputBrowse;
         }
     }
 }

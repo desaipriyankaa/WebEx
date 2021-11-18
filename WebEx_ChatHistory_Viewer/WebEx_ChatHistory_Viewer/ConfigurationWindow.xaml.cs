@@ -41,7 +41,7 @@ namespace ChatHistory.Viewer
             }
         }
 
-        private void LoginClose_Click(object sender, RoutedEventArgs e)
+        private void ConfigurationWindowClose_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
         }
@@ -61,7 +61,7 @@ namespace ChatHistory.Viewer
             }
             else
             {
-                MessageBox.Show("Enter correct Credentials ...!!! ");
+                MessageBox.Show("Please enter correct information ...!!! ");
             }
         }
 
@@ -70,10 +70,10 @@ namespace ChatHistory.Viewer
             FolderBrowserDialog folderBrowser = new FolderBrowserDialog();
             if (folderBrowser.ShowDialog() == WinForms.Forms.DialogResult.OK)
             {
-                _mainwindowBasePath= folderBrowser.SelectedPath;
-                BrowseText.Text = _mainwindowBasePath;
-                BrowseFullPath = BrowseText.Text;
-                _loginCredential.BrowsePath = BrowseFullPath;
+                    _mainwindowBasePath = folderBrowser.SelectedPath;
+                    BrowseText.Text = _mainwindowBasePath;
+                    BrowseFullPath = BrowseText.Text;
+                    _loginCredential.BrowsePath = BrowseFullPath;
             }
         }
 
@@ -96,13 +96,26 @@ namespace ChatHistory.Viewer
                 lblError.Content = "**Email is mandatory ..!";
                 inputEmail.Text = string.Empty;
             }
-
-            
         }
 
-        private void BrowseText_LostFocus(object sender, RoutedEventArgs e)
+        private void BrowseText_TextChanged(object sender, WinForms.Controls.TextChangedEventArgs e)
         {
-            _loginCredential.BrowsePath = BrowseText.Text;
+            bool CheckValid = _validation.isValidBrowsePath(BrowseText.Text.ToString());
+            if (CheckValid)
+            {
+                browseError.Foreground = Brushes.SkyBlue;
+                browseError.Content = "Correct Browsepath";
+                BrowseText.BorderBrush = Brushes.Black;
+                _loginCredential.BrowsePath = BrowseText.Text;
+            }
+            else
+            {
+                MessageBox.Show($"Invalid input..... please enter correct Browsepath which contains {"WebexDump"} folder !!");
+                BrowseText.BorderBrush = Brushes.Red;
+                browseError.Foreground = Brushes.Red;
+                browseError.Content = "**Browsepath is mandatory ..!";
+                BrowseText.Text = string.Empty;
+            }
         }
     }
 }

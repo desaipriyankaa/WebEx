@@ -2,6 +2,7 @@
 using Service.Library;
 using System.Collections.Generic;
 using System.IO;
+using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -54,6 +55,7 @@ namespace WebEx_ChatHistory_Viewer
                         myFolders.Items.Add(Path.GetFileName(item1));
                     }
                 }
+                this.Show();
             }
             else
             {
@@ -153,8 +155,9 @@ namespace WebEx_ChatHistory_Viewer
                 {
                     JsonDataSource jsonData = new JsonDataSource();
                     string loginUserEmail = jsonData.SplitEmail(_loginCredential.EmailID);
+                    Regex regex = new Regex(item.PersonEmail , RegexOptions.IgnoreCase);
 
-                    if (item.PersonEmail != loginUserEmail)  //For Others chat
+                    if (!regex.IsMatch(loginUserEmail))  //For Others chat
                     {
                         StackPanel stackPanel1 = GetStackPanel(Brushes.LightCyan, WinForms.HorizontalAlignment.Left);
                         data = AddingDataToStackPanel(data, stackPanel, localImagesPath, item, stackPanel1);
