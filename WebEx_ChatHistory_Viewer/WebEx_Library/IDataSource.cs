@@ -6,7 +6,7 @@ namespace Service.Library
     {
         public List<Messages> ReadMessage(string path);
 
-        public string[] ReadUsers(string path);
+        public List<string> ReadUsers(string path);
 
     }
 

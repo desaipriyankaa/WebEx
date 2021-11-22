@@ -28,7 +28,25 @@ namespace Service.Library
 
         public bool isValidBrowsePath(string browsePath)
         {
-            bool inputBrowse = browsePath.Contains("WebexDump");
+            bool inputBrowse = false; //browsePath.Contains("DirectChats");
+            //return inputBrowse;
+            JsonDataSource jsonData = new JsonDataSource();
+            List<string> dirs = jsonData.ReadUsers(browsePath).ToList();
+            foreach (var dir in dirs)
+            {
+                if (dir == @"D:\WPF Trial\WebExChatHistoryViewerTrial2\WebExChatHistoryViewer\WebexDump\DirectChats")
+                {
+                    inputBrowse = true;
+                }
+                else if (dir == @"D:\WPF Trial\WebExChatHistoryViewerTrial2\WebExChatHistoryViewer\WebexDump\Teams")
+                {
+                    inputBrowse = true;
+                }
+                else
+                {
+                    inputBrowse = false;
+                }
+            }
             return inputBrowse;
         }
     }

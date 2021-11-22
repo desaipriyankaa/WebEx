@@ -110,10 +110,10 @@ namespace ChatHistory.Viewer
             }
             else
             {
-                MessageBox.Show($"Invalid input..... please enter correct Browsepath which contains {"WebexDump"} folder !!");
+                MessageBox.Show($"Invalid input..... please enter correct Browsepath !!");
                 BrowseText.BorderBrush = Brushes.Red;
                 browseError.Foreground = Brushes.Red;
-                browseError.Content = "**Browsepath is mandatory ..!";
+                browseError.Content = "**Browsepath is mandatory ..Please enter Browsepath which contains WebexDump folder..!";
                 BrowseText.Text = string.Empty;
             }
         }

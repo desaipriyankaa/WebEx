@@ -44,7 +44,7 @@ namespace WebEx_ChatHistory_Viewer
             if (_loginCredential.BrowsePath != null)
             {
                 myFolders.Items.Clear();
-                string[] dirs = _services.ReadUserName(_loginCredential.BrowsePath);
+                List<string> dirs = _services.ReadUserName(_loginCredential.BrowsePath);
 
                 foreach (string dir in dirs)
                 {
@@ -145,7 +145,7 @@ namespace WebEx_ChatHistory_Viewer
 
             if (selectChat != null)
             {
-                string[] dirs = _services.ReadUserName(_loginCredential.BrowsePath);
+                List<string> dirs = _services.ReadUserName(_loginCredential.BrowsePath);
                 int dirNumber = selectChat.ToString().Contains(',') ? 1 : 0;
                 string filename = Path.Join(dirs[dirNumber], selectChat.ToString(), "messages.json");
                 List<Messages> msg = _services.ReadUserChatData(filename);
